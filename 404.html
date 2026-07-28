@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>404 — Page Not Found | Lingora</title>
+  <meta name="description" content="The page you're looking for could not be found. Return to Lingora's homepage.">
+  <meta name="keywords" content="404, page not found, lingora">
+  <link rel="icon" href="assets/images/stackly-logo.webp">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+</head>
+<body>
+  <div class="loader">
+    <img src="assets/images/stackly-logo.webp" alt="Lingora">
+    <div class="loader-ring"></div>
+    <p>Loading, please wait...</p>
+  </div>
+  
+  <div class="mobile-menu">
+    <a href="index.html" class="mobile-menu-logo">
+      <img src="assets/images/stackly-logo.webp" alt="Lingora logo">
+    </a>
+    <button class="mobile-menu-close" aria-label="Close menu"><i class="fa-solid fa-xmark"></i></button>
+    <ul>
+      <li><a href="index.html" class="nav-link">Home</a></li>
+      <li><a href="about.html" class="nav-link">About</a></li>
+      <li class="has-dropdown">
+        <a href="#" class="nav-link">Courses <i class="fa-solid fa-chevron-down chev"></i></a>
+        <div class="sub">
+          <a href="courses.html">All Courses</a>
+          <a href="courses.html#spanish">Spanish</a>
+          <a href="courses.html#french">French</a>
+          <a href="courses.html#japanese">Japanese</a>
+        </div>
+      </li>
+      <li><a href="pricing.html" class="nav-link">Pricing</a></li>
+      <li><a href="blog.html" class="nav-link">Blog</a></li>
+      <li><a href="contact.html" class="nav-link">Contact</a></li>
+    </ul>
+    <div class="mobile-menu-actions">
+      <a href="login.html" class="btn btn-outline btn-block">Log In</a>
+      <a href="signup.html" class="btn btn-primary btn-block">Get Started</a>
+    </div>
+  </div>
+
+
+  <section class="page-404">
+    <div>
+      <img src="assets/images/404-illustration.webp" alt="Page not found illustration" class="four-blob" style="width:100%;height:auto;max-width:220px;margin:0 auto;">
+      <div class="code" data-aos="up">404</div>
+      <h2 data-aos="up">Page Not Found</h2>
+      <p data-aos="up">The page you're looking for doesn't exist, has been moved, or the link is broken. Let's get you back on track.</p>
+      <div class="actions" data-aos="up">
+        <a href="index.html" class="btn btn-primary"><i class="fa-solid fa-house"></i> Back to Home</a>
+        <a href="javascript:history.back()" class="btn btn-outline">Go Back</a>
+      </div>
+      
+    </div>
+  </section>
+
+  
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

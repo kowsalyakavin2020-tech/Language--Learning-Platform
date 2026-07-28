@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up — Lingora</title>
+  <meta name="description" content="Create your free Lingora account and start learning a new language today.">
+  <meta name="keywords" content="lingora signup, create account, register language app">
+  <link rel="icon" href="assets/images/stackly-logo.webp">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+</head>
+<body>
+  <div class="loader">
+    <img src="assets/images/stackly-logo.webp" alt="Lingora">
+    <div class="loader-ring"></div>
+    <p>Loading, please wait...</p>
+  </div>
+
+  <div class="auth-page">
+    <div class="auth-wrap" data-aos="zoom">
+      <div class="auth-side">
+        <img src="assets/images/feature-speaking.webp" alt="Lingora instructor" class="auth-side-img">
+        <div class="auth-blip" style="top:20%;left:80%;animation-delay:.4s;"></div>
+        <div class="auth-blip" style="top:58%;left:15%;animation-delay:1.4s;"></div>
+        <div class="auth-blip" style="top:78%;left:65%;animation-delay:2.4s;"></div>
+        <div class="content">
+          <a href="index.html" class="auth-logo-pulse" style="display:inline-block;">
+            <img src="assets/images/stackly-logo.webp" alt="Lingora" style="height:30px;filter:brightness(0) invert(1);">
+          </a>
+          <h2>Start your language journey today</h2>
+          <p>Create a free account and get your first personalized lesson in under 2 minutes.</p>
+        </div>
+        <div class="content" style="position:relative;z-index:2;">
+          <div class="hero-stats" style="gap:24px;">
+            <div class="stat"><b style="color:#FFB648;">97%</b><span style="color:#E3E0FF;">Would recommend</span></div>
+            <div class="stat"><b style="color:#FFB648;">Free</b><span style="color:#E3E0FF;">To get started</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="auth-form-box">
+        <div class="auth-card">
+          <a href="index.html" class="back-home"><i class="fa-solid fa-arrow-left"></i> Back to Home</a>
+          <h1>Create Your Account</h1>
+          <p>Join 4M+ learners building real fluency with Lingora.</p>
+
+          <div class="social-row">
+            <a href="404.html"><button type="button" class="social-btn"><i class="fa-brands fa-google"></i> Google</button></a>
+            <a href="404.html"><button type="button" class="social-btn"><i class="fa-brands fa-apple"></i> Apple</button></a>
+          </div>
+          <div class="auth-divider">or sign up with email</div>
+
+          <form id="signupForm" novalidate>
+            <label style="font-size:13.5px;font-weight:600;display:block;margin-bottom:10px;">I want to join as</label>
+            <div class="role-select">
+              <div class="role-opt active" data-role="learner"><i class="fa-solid fa-graduation-cap"></i>Learner</div>
+              <div class="role-opt" data-role="instructor"><i class="fa-solid fa-chalkboard-user"></i>Instructor</div>
+              <div class="role-opt" data-role="admin"><i class="fa-solid fa-user-shield"></i>Admin</div>
+            </div>
+            <input type="hidden" name="role" id="signupRole" value="learner">
+
+            <div class="form-group">
+              <label for="fullName">Full Name</label>
+              <input type="text" id="fullName" data-validate="required" placeholder="Jane Doe">
+              <div class="error-msg">Name is required</div>
+            </div>
+            <div class="form-group">
+              <label for="suMobile">Mobile Number</label>
+              <input type="tel" id="suMobile" data-validate="required phone" placeholder="9876543210">
+              <div class="error-msg">Enter a valid 10-digit number</div>
+            </div>
+            <div class="form-group">
+              <label for="suEmail">Email Address</label>
+              <input type="email" id="suEmail" data-validate="required email" placeholder="you@example.com">
+              <div class="error-msg">Enter a valid email address</div>
+            </div>
+            <div class="form-group">
+              <label for="suPassword">Password</label>
+              <input type="password" id="suPassword" data-validate="required password" placeholder="Min. 8 characters">
+              <i class="fa-regular fa-eye pass-toggle"></i>
+              <div class="error-msg">Minimum 8 characters required</div>
+            </div>
+            <div class="form-group">
+              <label for="suConfirm">Confirm Password</label>
+              <input type="password" id="suConfirm" data-validate="required match" data-match-id="suPassword" placeholder="Re-enter password">
+              <i class="fa-regular fa-eye pass-toggle"></i>
+              <div class="error-msg">Passwords do not match</div>
+            </div>
+
+            <div class="checkbox-row">
+              <input type="checkbox" id="agreeTerms" data-validate-check="required">
+              <label for="agreeTerms">I agree to the <a href="404.html">Terms &amp; Conditions</a> and <a href="404.html">Privacy Policy</a></label>
+            </div>
+            <div class="error-msg" id="termsError" style="margin-top:-12px;margin-bottom:16px;">You must accept the terms to continue</div>
+
+            <button type="submit" class="btn btn-primary btn-block">Create Account</button>
+          </form>
+          <p class="auth-foot">Already have an account? <a href="login.html">Log In</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="assets/js/main.js"></script>
+  <script>
+    document.getElementById('signupForm').addEventListener('submit', function(e){
+      e.preventDefault();
+      const termsBox = document.getElementById('agreeTerms');
+      const termsErr = document.getElementById('termsError');
+      const formValid = validateForm(this);
+      termsErr.style.display = termsBox.checked ? 'none' : 'block';
+
+      if(formValid && termsBox.checked){
+        const email = document.getElementById('suEmail').value;
+        showToast('Account created! Please log in to continue.', 'success');
+        sessionStorage.setItem('lingora_email', email);
+        setTimeout(()=> window.location.href = 'login.html', 1200);
+      } else {
+        showToast('Please fix the errors below.', 'error');
+      }
+    });
+    document.getElementById('agreeTerms').addEventListener('change', function(){
+      document.getElementById('termsError').style.display = this.checked ? 'none' : 'block';
+    });
+  </script>
+</body>
+</html>

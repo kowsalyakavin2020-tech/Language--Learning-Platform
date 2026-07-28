@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us — Lingora</title>
+  <meta name="description" content="Get in touch with the Lingora team for course support, billing questions, or partnership inquiries.">
+  <meta name="keywords" content="contact lingora, lingora support, lingora office, language learning support">
+  <link rel="icon" href="assets/images/stackly-logo.webp">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+</head>
+<body>
+  <div class="loader">
+    <img src="assets/images/stackly-logo.webp" alt="Lingora">
+    <div class="loader-ring"></div>
+    <p>Loading, please wait...</p>
+  </div>
+  <header class="navbar">
+    <div class="container nav-inner">
+      <a href="index.html" class="nav-logo">
+        <img src="assets/images/stackly-logo.webp" alt="Lingora logo">
+      </a>
+      <nav>
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li class="has-dropdown">
+            <a href="courses.html" class="nav-link">Courses <i class="fa-solid fa-chevron-down chev"></i></a>
+            <div class="dropdown">
+              <a href="courses.html">All Courses</a>
+              <a href="courses.html#spanish">Spanish</a>
+              <a href="courses.html#french">French</a>
+              <a href="courses.html#japanese">Japanese</a>
+            </div>
+          </li>
+          <li><a href="pricing.html" class="nav-link">Pricing</a></li>
+          <li><a href="blog.html" class="nav-link">Blog</a></li>
+          <li><a href="contact.html" class="nav-link active">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="nav-actions">
+        <a href="login.html" class="btn btn-outline">Log In</a>
+        <a href="signup.html" class="btn btn-primary">Get Started</a>
+      </div>
+      <button class="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+  <div class="mobile-menu">
+    <a href="index.html" class="mobile-menu-logo">
+      <img src="assets/images/stackly-logo.webp" alt="Lingora logo">
+    </a>
+    <button class="mobile-menu-close" aria-label="Close menu"><i class="fa-solid fa-xmark"></i></button>
+    <ul>
+      <li><a href="index.html" class="nav-link">Home</a></li>
+      <li><a href="about.html" class="nav-link">About</a></li>
+      <li class="has-dropdown">
+        <a href="#" class="nav-link">Courses <i class="fa-solid fa-chevron-down chev"></i></a>
+        <div class="sub">
+          <a href="courses.html">All Courses</a>
+          <a href="courses.html#spanish">Spanish</a>
+          <a href="courses.html#french">French</a>
+          <a href="courses.html#japanese">Japanese</a>
+        </div>
+      </li>
+      <li><a href="pricing.html" class="nav-link">Pricing</a></li>
+      <li><a href="blog.html" class="nav-link">Blog</a></li>
+      <li><a href="contact.html" class="nav-link active">Contact</a></li>
+    </ul>
+    <div class="mobile-menu-actions">
+      <a href="login.html" class="btn btn-outline btn-block">Log In</a>
+      <a href="signup.html" class="btn btn-primary btn-block">Get Started</a>
+    </div>
+  </div>
+
+
+  <section class="page-hero">
+    <div class="container">
+      <h1>Get in Touch</h1>
+      <p>Questions about courses, billing, or partnerships? We'd love to hear from you.</p>
+      <div class="breadcrumb"><a href="index.html">Home</a><span>/</span><span>Contact</span></div>
+    </div>
+  </section>
+
+  <!-- Contact info + form -->
+  <section>
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-info-card" data-aos="left">
+          <h3>Contact Information</h3>
+          <p>Reach out through any of these channels — our team typically replies within 24 hours.</p>
+          <div class="contact-info-row"><i class="fa-solid fa-location-dot"></i><div><b>Office Address</b><span>42 Learning Street, Coimbatore, Tamil Nadu, India</span></div></div>
+          <div class="contact-info-row"><i class="fa-solid fa-phone"></i><div><b>Phone</b><span>+91 98765 43210</span></div></div>
+          <div class="contact-info-row"><i class="fa-solid fa-envelope"></i><div><b>Email</b><span>hello@lingora.com</span></div></div>
+          <div class="contact-info-row"><i class="fa-solid fa-clock"></i><div><b>Working Hours</b><span>Mon – Sat, 9:00 AM – 7:00 PM IST</span></div></div>
+          <div class="footer-social" style="margin-top:10px;">
+            <a href="404.html" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="404.html" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="404.html" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="404.html" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          </div>
+        </div>
+
+        <div class="contact-form-card" data-aos="right">
+          <h3 style="font-size:20px;margin-bottom:6px;">Send Us a Message</h3>
+          <p style="color:var(--ink-soft);font-size:14px;margin-bottom:24px;">Fill out the form and our team will get back to you shortly.</p>
+          <form id="contactForm" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="cName">Full Name</label>
+                <input type="text" id="cName" data-validate="required" placeholder="Your name">
+                <div class="error-msg">Name is required</div>
+              </div>
+              <div class="form-group">
+                <label for="cPhone">Phone Number</label>
+                <input type="tel" id="cPhone" data-validate="required phone" placeholder="9876543210">
+                <div class="error-msg">Enter a valid 10-digit number</div>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="cEmail">Email Address</label>
+              <input type="email" id="cEmail" data-validate="required email" placeholder="you@example.com">
+              <div class="error-msg">Enter a valid email address</div>
+            </div>
+            <div class="form-group">
+              <label for="cSubject">Subject</label>
+              <select id="cSubject" data-validate="required">
+                <option value="">Select a topic</option>
+                <option>General Inquiry</option>
+                <option>Course Support</option>
+                <option>Billing &amp; Payments</option>
+                <option>Partnership</option>
+              </select>
+              <div class="error-msg">Please select a subject</div>
+            </div>
+            <div class="form-group">
+              <label for="cMessage">Message</label>
+              <textarea id="cMessage" rows="4" data-validate="required" placeholder="How can we help?"></textarea>
+              <div class="error-msg">Please enter your message</div>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Map -->
+  <section style="background:var(--bg-alt);padding-top:0;">
+    <div class="container">
+      <div class="section-head center" data-aos="up">
+        <div class="section-tag" style="justify-content:center;display:flex;">Find Us</div>
+        <h2>Visit our office</h2>
+      </div>
+      <div class="map-wrap" data-aos="zoom">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3907.1616097152896!2d78.1739798!3d11.682956599999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3babefef7fd970bb%3A0xe11aef1a71994f9!2sStackly!5e0!3m2!1sen!2sin!4v1785152008641!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- Support departments -->
+  <section>
+    <div class="container">
+      <div class="section-head center" data-aos="up">
+        <div class="section-tag" style="justify-content:center;display:flex;">Talk to the Right Team</div>
+        <h2>Choose a department</h2>
+      </div>
+      <div class="grid grid-4">
+        <div class="card" data-aos="up"><div class="icon-box"><i class="fa-solid fa-headset"></i></div><h3>Learner Support</h3><p>Help with lessons, account access, or progress.</p></div>
+        <div class="card" data-aos="up" data-aos-delay="100"><div class="icon-box amber"><i class="fa-solid fa-credit-card"></i></div><h3>Billing</h3><p>Questions about subscriptions, invoices, or refunds.</p></div>
+        <div class="card" data-aos="up" data-aos-delay="200"><div class="icon-box"><i class="fa-solid fa-handshake"></i></div><h3>Partnerships</h3><p>Schools, businesses, and institutional inquiries.</p></div>
+        <div class="card" data-aos="up" data-aos-delay="300"><div class="icon-box amber"><i class="fa-solid fa-bullhorn"></i></div><h3>Press &amp; Media</h3><p>Interview requests and media inquiries.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Live chat banner -->
+  <section style="background:var(--bg-alt);">
+    <div class="container">
+      <div class="cta-band" data-aos="zoom" style="background:linear-gradient(120deg,var(--ink),#3527D6);">
+        <h2><i class="fa-solid fa-comments" style="color:var(--amber);"></i> Prefer to chat live?</h2>
+        <p>Our support team is online Mon–Sat, 9 AM–7 PM IST for instant answers to quick questions.</p>
+        <div class="hero-cta"><a href="404.html" class="btn btn-amber">Start Live Chat</a></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Response time stats -->
+  <section>
+    <div class="container">
+      <div class="stats-strip" data-aos="up">
+        <div class="grid grid-4">
+          <div class="stat"><b data-count="24" data-suffix="hr">0</b><span>Avg. Response Time</span></div>
+          <div class="stat"><b data-count="96" data-suffix="%">0</b><span>First-Reply Resolution</span></div>
+          <div class="stat"><b data-count="7" data-suffix="/7">0</b><span>Days Support Available</span></div>
+          <div class="stat"><b data-count="4.8" data-suffix="/5">0</b><span>Support Satisfaction</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Office locations -->
+  <section style="background:var(--bg-alt);">
+    <div class="container">
+      <div class="section-head center" data-aos="up">
+        <div class="section-tag" style="justify-content:center;display:flex;">Global Presence</div>
+        <h2>Our offices around the world</h2>
+      </div>
+      <div class="grid grid-3">
+        <div class="card" data-aos="up"><div class="icon-box"><i class="fa-solid fa-city"></i></div><h3>Coimbatore, India</h3><p>Headquarters &amp; engineering team</p></div>
+        <div class="card" data-aos="up" data-aos-delay="100"><div class="icon-box amber"><i class="fa-solid fa-city"></i></div><h3>Austin, USA</h3><p>North America operations</p></div>
+        <div class="card" data-aos="up" data-aos-delay="200"><div class="icon-box"><i class="fa-solid fa-city"></i></div><h3>Lisbon, Portugal</h3><p>European curriculum team</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Social connect -->
+  <section>
+    <div class="container" style="text-align:center;" data-aos="up">
+      <div class="section-head center"><div class="section-tag" style="justify-content:center;display:flex;">Stay Connected</div><h2>Follow Lingora on social media</h2></div>
+      <div class="footer-social" style="justify-content:center;display:flex;">
+        <a href="404.html" aria-label="Facebook" style="background:var(--bg-alt);color:var(--ink);"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="404.html" aria-label="Instagram" style="background:var(--bg-alt);color:var(--ink);"><i class="fa-brands fa-instagram"></i></a>
+        <a href="404.html" aria-label="X" style="background:var(--bg-alt);color:var(--ink);"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="404.html" aria-label="LinkedIn" style="background:var(--bg-alt);color:var(--ink);"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="404.html" aria-label="YouTube" style="background:var(--bg-alt);color:var(--ink);"><i class="fa-brands fa-youtube"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter -->
+  <section style="background:var(--bg-alt);">
+    <div class="container">
+      <div class="cta-band" data-aos="zoom">
+        <h2>Get updates from Lingora</h2>
+        <p>Subscribe for product news, learning tips, and occasional offers.</p>
+        <form id="contactNewsletter" style="display:flex;gap:12px;max-width:420px;margin:0 auto;flex-wrap:wrap;justify-content:center;">
+          <input type="email" placeholder="Enter your email" required style="flex:1;min-width:220px;padding:15px 18px;border-radius:50px;border:none;font-size:14.5px;">
+          <button type="submit" class="btn btn-amber">Subscribe</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section>
+    <div class="container" style="max-width:760px;">
+      <div class="section-head center" data-aos="up">
+        <div class="section-tag" style="justify-content:center;display:flex;">Common Questions</div>
+        <h2>Before you reach out</h2>
+      </div>
+      <div data-aos="up">
+        <div class="acc-item"><div class="acc-head">What's the fastest way to get support? <i class="fa-solid fa-plus"></i></div><div class="acc-body"><p>Email is fastest for account and billing issues; use the contact form above for anything else.</p></div></div>
+        <div class="acc-item"><div class="acc-head">Do you offer institutional partnerships? <i class="fa-solid fa-plus"></i></div><div class="acc-body"><p>Yes — select "Partnership" in the form above and our team will follow up with details.</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    document.getElementById('contactForm')?.addEventListener('submit', function(e){
+      e.preventDefault();
+      if(validateForm(this)){
+        window.location.href = '404.html';
+      } else {
+        showToast('Please fix the errors below.', 'error');
+      }
+    });
+   document.getElementById('contactNewsletter')?.addEventListener('submit', function(e){
+  e.preventDefault();
+  const emailInput = this.querySelector('input[type="email"]');
+  const emailValue = emailInput.value.trim();
+  const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+  if(emailValue === '' || !emailPattern.test(emailValue)){
+    showToast('Please enter a valid email address.', 'error');
+    return;
+  }
+
+  window.location.href = '404.html';
+});
+  </script>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo">
+        <img src="assets/images/stackly-logo.webp" alt="Lingora logo">
+      </a>
+          <p>Stackly helps millions of learners master new languages through bite-sized, science-backed lessons and real conversation practice.</p>
+          <div class="footer-social">
+            <a href="404.html" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="404.html" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="404.html" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="404.html" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          </div>
+        </div>
+        <div>
+          <h4>Company</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+            
+          </ul>
+        </div>
+        <div>
+          <h4>Courses</h4>
+          <ul>
+            <li><a href="404.html">Spanish</a></li>
+            <li><a href="404.html">French</a></li>
+            <li><a href="404.html">Japanese</a></li>
+            <li><a href="404.html">German</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Support</h4>
+          <ul>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="404.html">Help Center</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="signup.html">Sign Up</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <ul class="footer-contact">
+            <li><i class="fa-solid fa-location-dot"></i> MMR Complex, Chinna Thirupathi, near Chinna Muniyappan Kovil, Salem, Tamil Nadu 636008</li>
+            <li><i class="fa-solid fa-phone"></i> +91 98765 43210</li>
+            <li><i class="fa-solid fa-envelope"></i> info@stackly.com</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Stackly. All rights reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="404.html">Privacy Policy</a>
+          <a href="404.html">Terms of Service</a>
+          <a href="404.html">Sitemap</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

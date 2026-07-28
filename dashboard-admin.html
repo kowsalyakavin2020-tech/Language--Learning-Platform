@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard — Lingora</title>
+  <meta name="description" content="Oversee users, courses, and platform metrics on the Lingora admin dashboard.">
+  <meta name="keywords" content="lingora dashboard, admin dashboard">
+  <link rel="icon" href="assets/images/stackly-logo.webp">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+</head>
+<body>
+  <div class="loader">
+    <img src="assets/images/stackly-logo.webp" alt="Lingora">
+    <div class="loader-ring"></div>
+    <p>Loading, please wait...</p>
+  </div>
+
+  <div class="dash-wrap">
+    <aside class="dash-sidebar">
+      <a href="index.html" class="dash-logo">
+        <img src="assets/images/stackly-logo.webp" alt="Lingora">
+      </a>
+      <div class="role-badge" style="margin-bottom:22px;background:rgba(255,255,255,.1);color:#fff;"><i class="fa-solid fa-circle" style="font-size:7px;color:#2FD48A;"></i> Admin Account</div>
+      <nav class="dash-nav">
+        <a href="#" class="active" data-section="sec-overview"><i class="fa-solid fa-grip"></i> Overview</a>
+        <a href="#" class="" data-section="sec-users"><i class="fa-solid fa-user-group"></i> Users</a>
+        <a href="#" class="" data-section="sec-courses"><i class="fa-solid fa-layer-group"></i> Courses</a>
+        <a href="#" class="" data-section="sec-settings"><i class="fa-solid fa-gear"></i> Settings</a>
+        <a href="login.html"><i class="fa-solid fa-right-from-bracket"></i> Log Out</a>
+      </nav>
+    </aside>
+
+    <main class="dash-main">
+      <header class="dash-header">
+        <button class="dash-toggle"><i class="fa-solid fa-bars"></i></button>
+        <div>
+          <h3 style="font-size:16px;margin-bottom:2px;">Admin Dashboard</h3>
+          <p style="font-size:12.5px;color:var(--ink-soft);margin:0;" data-welcome-msg>Welcome back! <span aria-hidden="true">👋</span></p>
+        </div>
+        <div class="dash-user">
+          <div style="text-align:right;">
+            <b style="display:block;font-size:13.5px;" data-user-email>guest@lingora.com</b>
+            <span style="font-size:12px;color:var(--ink-soft);">Admin</span>
+          </div>
+          <div class="dash-user-avatar">A</div>
+        </div>
+      </header>
+
+      <div class="dash-content">
+        <section class="content-section active" id="sec-overview">
+          <h2 class="dash-subhead"><i class="fa-solid fa-chart-simple"></i> Platform Snapshot</h2>
+          <div class="grid grid-4">
+            <div class="stat-card"><div class="icon-box" style="background:var(--primary);"><i class="fa-solid fa-users"></i></div><div><b>4.2M</b><span>Total Learners</span></div></div>
+            <div class="stat-card"><div class="icon-box amber" style="background:var(--amber);"><i class="fa-solid fa-chalkboard-user"></i></div><div><b>320</b><span>Instructors</span></div></div>
+            <div class="stat-card"><div class="icon-box" style="background:var(--primary);"><i class="fa-solid fa-book"></i></div><div><b>38</b><span>Languages Live</span></div></div>
+            <div class="stat-card"><div class="icon-box amber" style="background:var(--amber);"><i class="fa-solid fa-sack-dollar"></i></div><div><b>$482K</b><span>Monthly Revenue</span></div></div>
+          </div>
+          <h2 class="dash-subhead"><i class="fa-solid fa-chart-pie"></i> Plan Distribution</h2>
+          <div class="dash-panel">
+            <div class="progress-row"><div class="top"><span>Free</span><span>62%</span></div><div class="progress-bar"><span data-value="62"></span></div></div>
+            <div class="progress-row"><div class="top"><span>Premium</span><span>31%</span></div><div class="progress-bar"><span data-value="31"></span></div></div>
+            <div class="progress-row"><div class="top"><span>Pro Coaching</span><span>7%</span></div><div class="progress-bar"><span data-value="7"></span></div></div>
+          </div>
+          <h2 class="dash-subhead"><i class="fa-solid fa-user-plus"></i> Recent Signups</h2>
+          <div class="dash-panel">
+            <table class="dash-table">
+              <tr><th>Name</th><th>Role</th><th>Plan</th></tr>
+              <tr><td style="display:flex;align-items:center;gap:10px;"><img src="assets/images/testimonial-user-2.webp" class="avatar-photo" style="width:30px;height:30px;" alt="Sara Peters">Sara Peters</td><td>Learner</td><td><span class="badge green">Premium</span></td></tr>
+              <tr><td style="display:flex;align-items:center;gap:10px;"><img src="assets/images/instructor-4.webp" class="avatar-photo" style="width:30px;height:30px;" alt="James Dubois">James Dubois</td><td>Instructor</td><td><span class="badge amber">—</span></td></tr>
+              <tr><td style="display:flex;align-items:center;gap:10px;"><img src="assets/images/testimonial-user-4.webp" class="avatar-photo" style="width:30px;height:30px;" alt="Nadia Fontaine">Nadia Fontaine</td><td>Learner</td><td><span class="badge green">Free</span></td></tr>
+            </table>
+          </div>
+          <h2 class="dash-subhead"><i class="fa-solid fa-server"></i> System Health</h2>
+          <div class="grid grid-3">
+            <div class="stat-card"><div class="icon-box" style="background:#2FD48A;"><i class="fa-solid fa-check"></i></div><div><b>99.98%</b><span>Uptime (30 days)</span></div></div>
+            <div class="stat-card"><div class="icon-box amber" style="background:var(--amber);"><i class="fa-solid fa-gauge-high"></i></div><div><b>142ms</b><span>Avg Response Time</span></div></div>
+          </div>
+        </section>
+        <section class="content-section" id="sec-users">
+          <h2 class="dash-subhead"><i class="fa-solid fa-list"></i> All Users</h2>
+          <div class="dash-panel">
+            <table class="dash-table">
+              <tr><th>Name</th><th>Email</th><th>Role</th><th>Status</th></tr>
+              <tr><td>Sara Peters</td><td>sara@example.com</td><td>Learner</td><td><span class="badge green">Active</span></td></tr>
+              <tr><td>Ravi Tanaka</td><td>ravi@example.com</td><td>Instructor</td><td><span class="badge green">Active</span></td></tr>
+              <tr><td>Priya Shah</td><td>priya@example.com</td><td>Admin</td><td><span class="badge green">Active</span></td></tr>
+              <tr><td>Tom Walsh</td><td>tom@example.com</td><td>Learner</td><td><span class="badge amber">Suspended</span></td></tr>
+            </table>
+          </div>
+          <h2 class="dash-subhead"><i class="fa-solid fa-chart-pie"></i> Role Distribution</h2>
+          <div class="grid grid-3" style="align-items:center;">
+            <img src="assets/images/community-learners.webp" alt="Lingora community" class="rounded-img-sm" style="height:150px;">
+            <div class="dash-panel" style="grid-column:span 2;">
+              <div class="progress-row"><div class="top"><span>Learners</span><span>92%</span></div><div class="progress-bar"><span data-value="92"></span></div></div>
+              <div class="progress-row"><div class="top"><span>Instructors</span><span>7%</span></div><div class="progress-bar"><span data-value="7"></span></div></div>
+              <div class="progress-row"><div class="top"><span>Admins</span><span>1%</span></div><div class="progress-bar"><span data-value="1"></span></div></div>
+            </div>
+          </div>
+          <h2 class="dash-subhead"><i class="fa-solid fa-arrow-trend-up"></i> User Growth</h2>
+          <div class="grid grid-3">
+            <div class="stat-card"><div class="icon-box" style="background:var(--primary);"><i class="fa-solid fa-user-plus"></i></div><div><b>+18,400</b><span>New This Month</span></div></div>
+            <div class="stat-card"><div class="icon-box amber" style="background:var(--amber);"><i class="fa-solid fa-chart-line"></i></div><div><b>+6.2%</b><span>Growth Rate</span></div></div>
+          </div>
+          <h2 class="dash-subhead"><i class="fa-solid fa-user-clock"></i> Pending Instructor Approvals</h2>
+          <div class="dash-panel">
+            <table class="dash-table">
+              <tr><th>Name</th><th>Applied For</th><th>Action</th></tr>
+              <tr><td>Hana Nakamura</td><td>Korean Instructor</td><td><span class="badge amber">Review</span></td></tr>
+            </table>
+          </div>
+        </section>
+        <section class="content-section" id="sec-courses">
+          <h2 class="dash-subhead"><i class="fa-solid fa-layer-group"></i> All Courses</h2>
+          <div class="grid grid-3">
+            <div class="card"><div class="icon-box flag-box"><img src="https://flagcdn.com/w80/es.png" alt="Spanish flag" loading="lazy"></div><h3>Spanish</h3><p>120 lessons &middot; 210K enrolled</p></div>
+            <div class="card"><div class="icon-box flag-box amber"><img src="https://flagcdn.com/w80/fr.png" alt="French flag" loading="lazy"></div><h3>French</h3><p>110 lessons &middot; 180K enrolled</p></div>
+            <div class="card"><div class="icon-box flag-box"><img src="https://flagcdn.com/w80/jp.png" alt="Japanese flag" loading="lazy"></div><h3>Japanese</h3><p>95 lessons &middot; 150K enrolled</p></div>
+          </div>
+          <h2 class="dash-subhead"><i class="fa-solid fa-chart-pie"></i> Category Breakdown</h2>
+          <div class="dash-panel">
+            <div class="progress-row"><div class="top"><span>European Languages</span><span>54%</span></div><div class="progress-bar"><span data-value="54"></span></div></div>
+            <div class="progress-row"><div class="top"><span>Asian Languages</span><span>38%</span></div><div class="progress-bar"><span data-value="38"></span></div></div>
+            <div class="progress-row"><div class="top"><span>Others</span><span>8%</span></div><div class="progress-bar"><span data-value="8"></span></div></div>
+          </div>
+          <h2 class="dash-subhead"><i class="fa-solid fa-star"></i> Top Rated Courses</h2>
+          <div class="dash-panel">
+            <table class="dash-table">
+              <tr><th>Course</th><th>Rating</th><th>Enrolled</th></tr>
+              <tr><td>Japanese Basics</td><td>4.9 ★</td><td>210K</td></tr>
+              <tr><td>Spanish for Beginners</td><td>4.8 ★</td><td>210K</td></tr>
+            </table>
+          </div>
+          <h2 class="dash-subhead"><i class="fa-solid fa-magnifying-glass"></i> Pending Review</h2>
+          <div class="dash-panel">
+            <table class="dash-table">
+              <tr><th>Course</th><th>Submitted By</th><th>Status</th></tr>
+              <tr><td>JLPT N3 Prep</td><td>Ravi Tanaka</td><td><span class="badge amber">Awaiting Review</span></td></tr>
+            </table>
+          </div>
+        </section>
+        <section class="content-section" id="sec-settings">
+          <h2 class="dash-subhead"><i class="fa-solid fa-user"></i> Profile Information</h2>
+          <div class="dash-panel" style="max-width:520px;">
+            <form novalidate data-dash-form>
+              <div class="form-row">
+                <div class="form-group"><label>Full Name</label><input type="text" data-validate="required" placeholder="Your name"><div class="error-msg">Name is required</div></div>
+                <div class="form-group"><label>Phone</label><input type="tel" data-validate="required phone" placeholder="9876543210"><div class="error-msg">Enter a valid 10-digit number</div></div>
+              </div>
+              <div class="form-group"><label>Email</label><input type="email" data-validate="required email" placeholder="you@example.com"><div class="error-msg">Enter a valid email address</div></div>
+              <button type="submit" class="btn btn-primary">Save Profile</button>
+            </form>
+          </div>
+          <h2 class="dash-subhead"><i class="fa-solid fa-lock"></i> Change Password</h2>
+          <div class="dash-panel" style="max-width:520px;">
+            <form novalidate data-dash-form>
+              <div class="form-group"><label>Current Password</label><input type="password" data-validate="required" placeholder="Current password"><div class="error-msg">This field is required</div></div>
+              <div class="form-row">
+                <div class="form-group"><label>New Password</label><input type="password" data-validate="required password" placeholder="Min. 8 characters"><div class="error-msg">Minimum 8 characters required</div></div>
+                <div class="form-group"><label>Confirm New Password</label><input type="password" data-validate="required" placeholder="Re-enter password"><div class="error-msg">This field is required</div></div>
+              </div>
+              <button type="submit" class="btn btn-primary">Update Password</button>
+            </form>
+          </div>
+          <h2 class="dash-subhead"><i class="fa-solid fa-bell"></i> Notification Preferences</h2>
+          <div class="dash-panel" style="max-width:520px;">
+            <div class="progress-row" style="display:flex;justify-content:space-between;align-items:center;"><span>Email updates about platform activity</span><input type="checkbox" checked style="accent-color:var(--primary);width:18px;height:18px;"></div>
+            <div class="progress-row" style="display:flex;justify-content:space-between;align-items:center;"><span>Weekly summary emails</span><input type="checkbox" checked style="accent-color:var(--primary);width:18px;height:18px;"></div>
+            <div class="progress-row" style="display:flex;justify-content:space-between;align-items:center;"><span>SMS reminders</span><input type="checkbox" style="accent-color:var(--primary);width:18px;height:18px;"></div>
+          </div>
+          <h2 class="dash-subhead"><i class="fa-solid fa-triangle-exclamation"></i> Danger Zone</h2>
+          <div class="dash-panel" style="max-width:520px;border-color:#FFD9DF;">
+            <p style="color:var(--ink-soft);font-size:14px;margin-bottom:16px;">Deactivating your account will hide your profile and pause all activity. This can be reversed by logging back in within 30 days.</p>
+            <a href="404.html"><button type="button" class="btn btn-outline btn-sm" style="border-color:#FF5C7A;color:#FF5C7A;">Deactivate Account</button></a>
+          </div>
+        </section>
+      </div>
+    </main>
+  </div>
+
+  <script src="assets/js/main.js"></script>
+  <script>
+    document.querySelector('.dash-user-avatar').textContent = (sessionStorage.getItem('lingora_email')||'A')[0].toUpperCase();
+    document.querySelectorAll('form[data-dash-form]').forEach(f=>{
+      f.addEventListener('submit', function(e){
+        e.preventDefault();
+        if(validateForm(this)){ showToast('Saved successfully.', 'success'); }
+        else { showToast('Please fix the errors below.', 'error'); }
+      });
+    });
+  </script>
+</body>
+</html>

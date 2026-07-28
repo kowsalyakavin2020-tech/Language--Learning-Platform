@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Learner Dashboard — Lingora</title>
+  <meta name="description" content="Track your courses, progress, and streaks on your Lingora learner dashboard.">
+  <meta name="keywords" content="lingora dashboard, learner dashboard">
+  <link rel="icon" href="assets/images/stackly-logo.webp">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+</head>
+<body>
+  <div class="loader">
+    <img src="assets/images/stackly-logo.webp" alt="Lingora">
+    <div class="loader-ring"></div>
+    <p>Loading, please wait...</p>
+  </div>
+
+  <div class="dash-wrap">
+    <aside class="dash-sidebar">
+      <a href="index.html" class="dash-logo">
+        <img src="assets/images/stackly-logo.webp" alt="Lingora">
+      </a>
+      <div class="role-badge" style="margin-bottom:22px;background:rgba(255,255,255,.1);color:#fff;"><i class="fa-solid fa-circle" style="font-size:7px;color:#2FD48A;"></i> Learner Account</div>
+      <nav class="dash-nav">
+        <a href="#" class="active" data-section="sec-overview"><i class="fa-solid fa-grip"></i> Overview</a>
+        <a href="#" class="" data-section="sec-courses"><i class="fa-solid fa-book-open"></i> My Courses</a>
+        <a href="#" class="" data-section="sec-progress"><i class="fa-solid fa-chart-line"></i> Progress</a>
+        <a href="#" class="" data-section="sec-settings"><i class="fa-solid fa-gear"></i> Settings</a>
+        <a href="login.html"><i class="fa-solid fa-right-from-bracket"></i> Log Out</a>
+      </nav>
+    </aside>
+
+    <main class="dash-main">
+      <header class="dash-header">
+        <button class="dash-toggle"><i class="fa-solid fa-bars"></i></button>
+        <div>
+          <h3 style="font-size:16px;margin-bottom:2px;">Learner Dashboard</h3>
+          <p style="font-size:12.5px;color:var(--ink-soft);margin:0;" data-welcome-msg>Welcome back! <span aria-hidden="true">👋</span></p>
+        </div>
+        <div class="dash-user">
+          <div style="text-align:right;">
+            <b style="display:block;font-size:13.5px;" data-user-email>guest@lingora.com</b>
+            <span style="font-size:12px;color:var(--ink-soft);">Learner</span>
+          </div>
+          <div class="dash-user-avatar">L</div>
+        </div>
+      </header>
+
+      <div class="dash-content">
+        <section class="content-section active" id="sec-overview">
+          <h2 class="dash-subhead"><i class="fa-solid fa-chart-simple"></i> Snapshot</h2>
+          <div class="grid grid-4">
+            <div class="stat-card"><div class="icon-box" style="background:var(--primary);"><i class="fa-solid fa-fire"></i></div><div><b>12</b><span>Day Streak</span></div></div>
+            <div class="stat-card"><div class="icon-box amber" style="background:var(--amber);"><i class="fa-solid fa-medal"></i></div><div><b>2,480</b><span>Total XP</span></div></div>
+            <div class="stat-card"><div class="icon-box" style="background:var(--primary);"><i class="fa-solid fa-book"></i></div><div><b>3</b><span>Active Courses</span></div></div>
+            <div class="stat-card"><div class="icon-box amber" style="background:var(--amber);"><i class="fa-solid fa-certificate"></i></div><div><b>1</b><span>Certificates</span></div></div>
+          </div>
+          <h2 class="dash-subhead"><i class="fa-solid fa-chart-line"></i> Weekly Progress</h2>
+          <div class="dash-panel">
+            <div class="progress-row"><div class="top"><span>Vocabulary</span><span>82%</span></div><div class="progress-bar"><span data-value="82"></span></div></div>
+            <div class="progress-row"><div class="top"><span>Listening</span><span>68%</span></div><div class="progress-bar"><span data-value="68"></span></div></div>
+            <div class="progress-row"><div class="top"><span>Speaking</span><span>54%</span></div><div class="progress-bar"><span data-value="54"></span></div></div>
+            <div class="progress-row"><div class="top"><span>Grammar</span><span>91%</span></div><div class="progress-bar"><span data-value="91"></span></div></div>
+          </div>
+          <h2 class="dash-subhead"><i class="fa-solid fa-clock-rotate-left"></i> Recent Activity</h2>
+          <div class="dash-panel">
+            <table class="dash-table">
+              <tr><th>Lesson</th><th>Course</th><th>Status</th></tr>
+              <tr><td>Ordering Food</td><td>Spanish</td><td><span class="badge green">Completed</span></td></tr>
+              <tr><td>Past Tense Verbs</td><td>French</td><td><span class="badge amber">In Progress</span></td></tr>
+              <tr><td>Basic Greetings</td><td>Japanese</td><td><span class="badge green">Completed</span></td></tr>
+            </table>
+          </div>
+          <h2 class="dash-subhead"><i class="fa-solid fa-calendar-day"></i> This Week's Streak</h2>
+          <div class="grid grid-3" style="align-items:center;">
+            <img src="assets/images/streak-illustration.webp" alt="Daily streak" class="rounded-img-sm" style="height:150px;">
+            <div class="dash-panel" style="grid-column:span 2;">
+              <div class="streak-grid">
+                <div class="streak-day done">Mon</div><div class="streak-day done">Tue</div><div class="streak-day done">Wed</div>
+                <div class="streak-day done">Thu</div><div class="streak-day done">Fri</div><div class="streak-day">Sat</div><div class="streak-day">Sun</div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="content-section" id="sec-courses">
+          <h2 class="dash-subhead"><i class="fa-solid fa-play"></i> Active Courses</h2>
+          <div class="grid grid-3">
+            <div class="card"><div class="icon-box flag-box"><img src="https://flagcdn.com/w80/es.png" alt="Spanish flag" loading="lazy"></div><h3>Spanish</h3><p>Level A2 &middot; 68% complete</p><div class="progress-bar" style="margin-top:12px;"><span data-value="68"></span></div></div>
+            <div class="card"><div class="icon-box flag-box amber"><img src="https://flagcdn.com/w80/fr.png" alt="French flag" loading="lazy"></div><h3>French</h3><p>Level A1 &middot; 34% complete</p><div class="progress-bar" style="margin-top:12px;"><span data-value="34"></span></div></div>
+            <div class="card"><div class="icon-box flag-box"><img src="https://flagcdn.com/w80/jp.png" alt="Japanese flag" loading="lazy"></div><h3>Japanese</h3><p>Level A1 &middot; 12% complete</p><div class="progress-bar" style="margin-top:12px;"><span data-value="12"></span></div></div>
+          </div>
+          <h2 class="dash-subhead"><i class="fa-solid fa-circle-check"></i> Completed Courses</h2>
+          <div class="grid grid-3">
+            <div class="card"><div class="icon-box flag-box amber"><img src="https://flagcdn.com/w80/in.png" alt="Indian flag" loading="lazy"></div><h3>English Basics</h3><p>Completed &middot; 100%</p></div>
+          </div>
+          <h2 class="dash-subhead"><i class="fa-solid fa-wand-magic-sparkles"></i> Recommended For You</h2>
+          <div class="grid grid-3">
+            <div class="card"><div class="icon-box flag-box"><img src="https://flagcdn.com/w80/kr.png" alt="Korean flag" loading="lazy"></div><h3>Korean for Beginners</h3><p>Based on your Japanese progress</p></div>
+            <div class="card"><div class="icon-box flag-box amber"><img src="https://flagcdn.com/w80/de.png" alt="German flag" loading="lazy"></div><h3>German Essentials</h3><p>Popular with Spanish learners</p></div>
+          </div>
+          <h2 class="dash-subhead"><i class="fa-solid fa-certificate"></i> Certificates Earned</h2>
+          <div class="grid grid-3" style="align-items:center;">
+            <img src="assets/images/certificate-illustration.svg" alt="Certificate" class="rounded-img-sm" style="height:160px;">
+            <div class="badge-list" style="grid-column:span 2;">
+              <div class="badge-pill"><i class="fa-solid fa-certificate"></i> English Basics — Completed</div>
+              <div class="badge-pill" style="opacity:.5;"><i class="fa-solid fa-lock"></i> Spanish A2 — In Progress</div>
+            </div>
+          </div>
+        </section>
+        <section class="content-section" id="sec-progress">
+          <h2 class="dash-subhead"><i class="fa-solid fa-chart-pie"></i> Skill Breakdown</h2>
+          <div class="dash-panel">
+            <div class="progress-row"><div class="top"><span>Reading</span><span>76%</span></div><div class="progress-bar"><span data-value="76"></span></div></div>
+            <div class="progress-row"><div class="top"><span>Writing</span><span>58%</span></div><div class="progress-bar"><span data-value="58"></span></div></div>
+            <div class="progress-row"><div class="top"><span>Listening</span><span>68%</span></div><div class="progress-bar"><span data-value="68"></span></div></div>
+            <div class="progress-row"><div class="top"><span>Speaking</span><span>54%</span></div><div class="progress-bar"><span data-value="54"></span></div></div>
+          </div>
+          <h2 class="dash-subhead"><i class="fa-solid fa-award"></i> Achievements & Badges</h2>
+          <div class="grid grid-3" style="align-items:center;">
+            <img src="assets/images/leaderboard-illustration.webp" alt="Leaderboard" class="rounded-img-sm" style="height:140px;">
+            <div class="badge-list" style="grid-column:span 2;">
+              <div class="badge-pill"><i class="fa-solid fa-fire"></i> 12-Day Streak</div>
+              <div class="badge-pill"><i class="fa-solid fa-medal"></i> 2,000+ XP Club</div>
+              <div class="badge-pill"><i class="fa-solid fa-graduation-cap"></i> First Course Completed</div>
+            </div>
+          </div>
+          <h2 class="dash-subhead"><i class="fa-solid fa-calendar-week"></i> Monthly Streak Calendar</h2>
+          <div class="dash-panel">
+            <div class="streak-grid">
+              <div class="streak-day done">1</div><div class="streak-day done">2</div><div class="streak-day done">3</div><div class="streak-day">4</div><div class="streak-day done">5</div><div class="streak-day done">6</div><div class="streak-day done">7</div>
+            </div>
+          </div>
+          <h2 class="dash-subhead"><i class="fa-solid fa-bullseye"></i> Fluency Goal</h2>
+          <div class="dash-panel">
+            <div class="top" style="display:flex;justify-content:space-between;margin-bottom:8px;"><span>Target: Conversational Spanish by Dec 2026</span><span>68%</span></div>
+            <div class="progress-bar"><span data-value="68"></span></div>
+          </div>
+        </section>
+        <section class="content-section" id="sec-settings">
+          <h2 class="dash-subhead"><i class="fa-solid fa-user"></i> Profile Information</h2>
+          <div class="dash-panel" style="max-width:520px;">
+            <form novalidate data-dash-form>
+              <div class="form-row">
+                <div class="form-group"><label>Full Name</label><input type="text" data-validate="required" placeholder="Your name"><div class="error-msg">Name is required</div></div>
+                <div class="form-group"><label>Phone</label><input type="tel" data-validate="required phone" placeholder="9876543210"><div class="error-msg">Enter a valid 10-digit number</div></div>
+              </div>
+              <div class="form-group"><label>Email</label><input type="email" data-validate="required email" placeholder="you@example.com"><div class="error-msg">Enter a valid email address</div></div>
+              <a href="404.html"><button type="submit" class="btn btn-primary">Save Profile</button></a>
+            </form>
+          </div>
+          <h2 class="dash-subhead"><i class="fa-solid fa-lock"></i> Change Password</h2>
+          <div class="dash-panel" style="max-width:520px;">
+            <form novalidate data-dash-form>
+              <div class="form-group"><label>Current Password</label><input type="password" data-validate="required" placeholder="Current password"><div class="error-msg">This field is required</div></div>
+              <div class="form-row">
+                <div class="form-group"><label>New Password</label><input type="password" data-validate="required password" placeholder="Min. 8 characters"><div class="error-msg">Minimum 8 characters required</div></div>
+                <div class="form-group"><label>Confirm New Password</label><input type="password" data-validate="required" placeholder="Re-enter password"><div class="error-msg">This field is required</div></div>
+              </div>
+              <button type="submit" class="btn btn-primary">Update Password</button>
+            </form>
+          </div>
+          <h2 class="dash-subhead"><i class="fa-solid fa-bell"></i> Notification Preferences</h2>
+          <div class="dash-panel" style="max-width:520px;">
+            <div class="progress-row" style="display:flex;justify-content:space-between;align-items:center;"><span>Email updates about learning activity</span><input type="checkbox" checked style="accent-color:var(--primary);width:18px;height:18px;"></div>
+            <div class="progress-row" style="display:flex;justify-content:space-between;align-items:center;"><span>Weekly summary emails</span><input type="checkbox" checked style="accent-color:var(--primary);width:18px;height:18px;"></div>
+            <div class="progress-row" style="display:flex;justify-content:space-between;align-items:center;"><span>SMS reminders</span><input type="checkbox" style="accent-color:var(--primary);width:18px;height:18px;"></div>
+          </div>
+          <h2 class="dash-subhead"><i class="fa-solid fa-triangle-exclamation"></i> Danger Zone</h2>
+          <div class="dash-panel" style="max-width:520px;border-color:#FFD9DF;">
+            <p style="color:var(--ink-soft);font-size:14px;margin-bottom:16px;">Deactivating your account will hide your profile and pause all activity. This can be reversed by logging back in within 30 days.</p>
+            <a href="404.html"><button type="button" class="btn btn-outline btn-sm" style="border-color:#FF5C7A;color:#FF5C7A;">Deactivate Account</button></a>
+          </div>
+        </section>
+      </div>
+    </main>
+  </div>
+
+  <script src="assets/js/main.js"></script>
+  <script>
+    document.querySelector('.dash-user-avatar').textContent = (sessionStorage.getItem('lingora_email')||'L')[0].toUpperCase();
+    document.querySelectorAll('form[data-dash-form]').forEach(f=>{
+      f.addEventListener('submit', function(e){
+        e.preventDefault();
+        if(validateForm(this)){ showToast('Saved successfully.', 'success'); }
+        else { showToast('Please fix the errors below.', 'error'); }
+      });
+    });
+  </script>
+</body>
+</html>

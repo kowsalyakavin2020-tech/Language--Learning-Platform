@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us — Lingora</title>
+  <meta name="description" content="Learn about Lingora's mission, story, and the team building the world's most effective language learning platform.">
+  <meta name="keywords" content="about lingora, language learning company, lingora mission, lingora team">
+  <link rel="icon" href="assets/images/stackly-logo.webp">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+</head>
+<body>
+  <div class="loader">
+    <img src="assets/images/stackly-logo.webp" alt="Lingora">
+    <div class="loader-ring"></div>
+    <p>Loading, please wait...</p>
+  </div>
+  <header class="navbar">
+    <div class="container nav-inner">
+      <a href="index.html" class="nav-logo">
+        <img src="assets/images/stackly-logo.webp" alt="Lingora logo">
+      </a>
+      <nav>
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link active">About</a></li>
+          <li class="has-dropdown">
+            <a href="courses.html" class="nav-link">Courses <i class="fa-solid fa-chevron-down chev"></i></a>
+            <div class="dropdown">
+              <a href="courses.html">All Courses</a>
+              <a href="courses.html#spanish">Spanish</a>
+              <a href="courses.html#french">French</a>
+              <a href="courses.html#japanese">Japanese</a>
+            </div>
+          </li>
+          <li><a href="pricing.html" class="nav-link">Pricing</a></li>
+          <li><a href="blog.html" class="nav-link">Blog</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="nav-actions">
+        <a href="login.html" class="btn btn-outline">Log In</a>
+        <a href="signup.html" class="btn btn-primary">Get Started</a>
+      </div>
+      <button class="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+  <div class="mobile-menu">
+    <a href="index.html" class="mobile-menu-logo">
+      <img src="assets/images/stackly-logo.webp" alt="Lingora logo">
+    </a>
+    <button class="mobile-menu-close" aria-label="Close menu"><i class="fa-solid fa-xmark"></i></button>
+    <ul>
+      <li><a href="index.html" class="nav-link">Home</a></li>
+      <li><a href="about.html" class="nav-link active">About</a></li>
+      <li class="has-dropdown">
+        <a href="#" class="nav-link">Courses <i class="fa-solid fa-chevron-down chev"></i></a>
+        <div class="sub">
+          <a href="courses.html">All Courses</a>
+          <a href="courses.html#spanish">Spanish</a>
+          <a href="courses.html#french">French</a>
+          <a href="courses.html#japanese">Japanese</a>
+        </div>
+      </li>
+      <li><a href="pricing.html" class="nav-link">Pricing</a></li>
+      <li><a href="blog.html" class="nav-link">Blog</a></li>
+      <li><a href="contact.html" class="nav-link">Contact</a></li>
+    </ul>
+    <div class="mobile-menu-actions">
+      <a href="login.html" class="btn btn-outline btn-block">Log In</a>
+      <a href="signup.html" class="btn btn-primary btn-block">Get Started</a>
+    </div>
+  </div>
+
+
+  <section class="page-hero">
+    <div class="container">
+      <h1>About Lingora</h1>
+      <p>Building the world's most effective way to learn a language — one habit at a time.</p>
+      <div class="breadcrumb"><a href="index.html">Home</a><span>/</span><span>About</span></div>
+    </div>
+  </section>
+
+  <!-- Our Story -->
+  <section>
+    <div class="container hero-grid">
+      <div data-aos="left">
+        <div class="section-tag">Our Story</div>
+        <h2 style="font-size:clamp(26px,4vw,36px);margin-bottom:16px;">Started by learners, built for learners</h2>
+        <p style="color:var(--ink-soft);margin-bottom:16px;">Lingora began in 2019 when a small team of linguists and engineers set out to fix a simple problem: most people quit language apps within weeks. We rebuilt learning around daily habits, real speaking practice, and genuine motivation.</p>
+        <p style="color:var(--ink-soft);">Today, over 4 million learners across 190+ countries use Lingora to build real fluency — not just app streaks.</p>
+      </div>
+      <div data-aos="right">
+        <img src="assets/images/about-mission.webp" alt="Lingora's mission in action" class="rounded-img">
+      </div>
+    </div>
+  </section>
+
+  <!-- Mission / Vision -->
+  <section style="background:var(--bg-alt);">
+    <div class="container">
+      <div class="grid grid-2">
+        <div class="card" data-aos="up"><div class="icon-box"><i class="fa-solid fa-bullseye"></i></div><h3>Our Mission</h3><p>Make real fluency achievable for anyone, anywhere, regardless of budget or background, through effective, enjoyable daily practice.</p></div>
+        <div class="card" data-aos="up" data-aos-delay="100"><div class="icon-box amber"><i class="fa-solid fa-eye"></i></div><h3>Our Vision</h3><p>A world where language is never a barrier to opportunity, connection, or curiosity.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats -->
+  <section>
+    <div class="container">
+      <div class="stats-strip" data-aos="up">
+        <div class="grid grid-4">
+          <div class="stat"><b data-count="2019">0</b><span>Founded</span></div>
+          <div class="stat"><b data-count="4200000" data-suffix="+">0</b><span>Learners</span></div>
+          <div class="stat"><b data-count="190" data-suffix="+">0</b><span>Countries</span></div>
+          <div class="stat"><b data-count="120" data-suffix="+">0</b><span>Team Members</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Core Values -->
+  <section style="background:var(--bg-alt);">
+    <div class="container">
+      <div class="section-head center" data-aos="up"><div class="section-tag" style="justify-content:center;display:flex;">What Drives Us</div><h2>Our core values</h2></div>
+      <div class="grid grid-4">
+        <div class="card" data-aos="up"><div class="icon-box"><i class="fa-solid fa-heart"></i></div><h3>Learner First</h3><p>Every decision starts with what helps learners stick with it.</p></div>
+        <div class="card" data-aos="up" data-aos-delay="100"><div class="icon-box amber"><i class="fa-solid fa-flask"></i></div><h3>Backed by Science</h3><p>Our curriculum is built on proven linguistic research.</p></div>
+        <div class="card" data-aos="up" data-aos-delay="200"><div class="icon-box"><i class="fa-solid fa-globe"></i></div><h3>Globally Inclusive</h3><p>Content designed for every culture and learning style.</p></div>
+        <div class="card" data-aos="up" data-aos-delay="300"><div class="icon-box amber"><i class="fa-solid fa-arrow-trend-up"></i></div><h3>Always Improving</h3><p>We ship better lessons and tools every single month.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Timeline -->
+  <section>
+    <div class="container">
+      <div class="section-head center" data-aos="up"><div class="section-tag" style="justify-content:center;display:flex;">Our Journey</div><h2>Milestones along the way</h2></div>
+      <div class="process-row">
+        <div class="process-step" data-aos="up"><div class="num">2019</div><h4>Founded</h4><p>Lingora launches with Spanish and French.</p></div>
+        <div class="process-step" data-aos="up" data-aos-delay="100"><div class="num">2021</div><h4>1M Learners</h4><p>Crossed our first million active learners.</p></div>
+        <div class="process-step" data-aos="up" data-aos-delay="200"><div class="num">2023</div><h4>38 Languages</h4><p>Expanded catalog to 38+ languages globally.</p></div>
+        <div class="process-step" data-aos="up" data-aos-delay="300"><div class="num">2026</div><h4>4M+ Learners</h4><p>Now trusted by learners in 190+ countries.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Leadership team -->
+  <section style="background:var(--bg-alt);">
+    <div class="container">
+      <div class="section-head center" data-aos="up"><div class="section-tag" style="justify-content:center;display:flex;">Leadership</div><h2>Meet the people behind Lingora</h2></div>
+      <div class="grid grid-4">
+        <div class="card" style="text-align:center;" data-aos="up"><img src="assets/images/instructor-1.webp" alt="Priya Shah" class="avatar-photo" style="width:80px;height:80px;margin:0 auto 14px;"><h3 style="font-size:16px;">Priya Shah</h3><p>Co-Founder &amp; CEO</p></div>
+        <div class="card" style="text-align:center;" data-aos="up" data-aos-delay="100"><img src="assets/images/instructor-2.webp" alt="Leo Martins" class="avatar-photo" style="width:80px;height:80px;margin:0 auto 14px;"><h3 style="font-size:16px;">Leo Martins</h3><p>Co-Founder &amp; CTO</p></div>
+        <div class="card" style="text-align:center;" data-aos="up" data-aos-delay="200"><img src="assets/images/instructor-3.webp" alt="Hana Nakamura" class="avatar-photo" style="width:80px;height:80px;margin:0 auto 14px;"><h3 style="font-size:16px;">Hana Nakamura</h3><p>Head of Curriculum</p></div>
+        <div class="card" style="text-align:center;" data-aos="up" data-aos-delay="300"><img src="assets/images/instructor-4.webp" alt="Omar Traoré" class="avatar-photo" style="width:80px;height:80px;margin:0 auto 14px;"><h3 style="font-size:16px;">Omar Traoré</h3><p>Head of Product</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonial highlight -->
+  <section>
+    <div class="container" style="max-width:760px;text-align:center;" data-aos="up">
+      <div class="testi-stars" style="justify-content:center;display:flex;">★★★★★</div>
+      <p style="font-size:20px;color:var(--ink);margin:14px 0 20px;">"Lingora's mission-driven approach is obvious in every lesson — it doesn't feel like an app built by a committee, it feels like it was built by people who love languages."</p>
+      <div class="testi-user" style="justify-content:center;"><img src="assets/images/testimonial-user-4.webp" alt="Rosa Castillo" class="testi-avatar-photo"><div><b>Rosa Castillo</b><span>Learner since 2021</span></div></div>
+    </div>
+  </section>
+
+  <!-- Careers strip -->
+  <section style="background:var(--bg-alt);">
+    <div class="container grid grid-2" style="align-items:center;">
+      <div data-aos="left">
+        <div class="section-tag">Join Us</div>
+        <h2 style="font-size:clamp(24px,3.4vw,32px);margin-bottom:14px;">We're always looking for passionate people</h2>
+        <p style="color:var(--ink-soft);">From curriculum design to engineering, help us shape how the world learns languages.</p>
+      </div>
+      <div data-aos="right" style="text-align:right;">
+        <a href="404.html" class="btn btn-primary">View Open Roles</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Partners -->
+  <section>
+    <div class="container">
+      <div class="section-head center" data-aos="up"><div class="section-tag" style="justify-content:center;display:flex;">Partners</div><h2>Working with organizations we trust</h2></div>
+      <div class="logo-marquee">
+        <div class="logo-track">
+          <span>EduWorld</span><span>Global Learners</span><span>CampusHub</span><span>SkillNet</span><span>BrightPath</span>
+          <span>EduWorld</span><span>Global Learners</span><span>CampusHub</span><span>SkillNet</span><span>BrightPath</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Awards & Recognition -->
+  <section>
+    <div class="container">
+      <div class="section-head center" data-aos="up"><div class="section-tag" style="justify-content:center;display:flex;">Recognition</div><h2>Awards &amp; recognition</h2></div>
+      <div class="grid grid-4">
+        <div class="card" style="text-align:center;" data-aos="up"><div class="icon-box amber" style="margin:0 auto 14px;"><i class="fa-solid fa-trophy"></i></div><h3 style="font-size:15.5px;">EdTech App of the Year</h3><p>2025</p></div>
+        <div class="card" style="text-align:center;" data-aos="up" data-aos-delay="100"><div class="icon-box" style="margin:0 auto 14px;"><i class="fa-solid fa-star"></i></div><h3 style="font-size:15.5px;">Top Rated Learning App</h3><p>App Store, 2024</p></div>
+        <div class="card" style="text-align:center;" data-aos="up" data-aos-delay="200"><div class="icon-box amber" style="margin:0 auto 14px;"><i class="fa-solid fa-lightbulb"></i></div><h3 style="font-size:15.5px;">Most Innovative Startup</h3><p>SkillNet, 2023</p></div>
+        <div class="card" style="text-align:center;" data-aos="up" data-aos-delay="300"><div class="icon-box" style="margin:0 auto 14px;"><i class="fa-solid fa-people-group"></i></div><h3 style="font-size:15.5px;">Best Community Impact</h3><p>SkillNet Awards, 2026</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Press mentions -->
+  <section style="background:var(--bg-alt);">
+    <div class="container">
+      <div class="section-head center" data-aos="up"><div class="section-tag" style="justify-content:center;display:flex;">In the News</div><h2>Featured in the press</h2></div>
+      <div class="logo-marquee">
+        <div class="logo-track">
+          <span>EduWorld Daily</span><span>TechBridge</span><span>Global Learners</span><span>CampusHub News</span><span>BrightPath Journal</span>
+          <span>EduWorld Daily</span><span>TechBridge</span><span>Global Learners</span><span>CampusHub News</span><span>BrightPath Journal</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Culture / life at Lingora -->
+  <section>
+    <div class="container">
+      <div class="section-head center" data-aos="up"><div class="section-tag" style="justify-content:center;display:flex;">Our Culture</div><h2>Life at Lingora</h2></div>
+      <img src="assets/images/about-team.webp" alt="The Lingora team" class="rounded-img" style="height:320px;margin-bottom:36px;" data-aos="zoom">
+      <div class="grid grid-3">
+        <div class="card" data-aos="up"><div class="icon-box"><i class="fa-solid fa-house-laptop"></i></div><h3>Remote-First</h3><p>Our team works from 20+ countries, connected around a shared mission.</p></div>
+        <div class="card" data-aos="up" data-aos-delay="100"><div class="icon-box amber"><i class="fa-solid fa-language"></i></div><h3>Language Fridays</h3><p>Every team member learns a new language together, using our own product.</p></div>
+        <div class="card" data-aos="up" data-aos-delay="200"><div class="icon-box"><i class="fa-solid fa-seedling"></i></div><h3>Growth-Focused</h3><p>Dedicated learning budget and mentorship for every employee.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Social impact / scholarships -->
+  <section style="background:var(--bg-alt);">
+    <div class="container hero-grid">
+      <div data-aos="left">
+        <div class="section-tag">Giving Back</div>
+        <h2 style="font-size:clamp(24px,3.4vw,32px);margin-bottom:14px;">Scholarships for underserved learners</h2>
+        <p style="color:var(--ink-soft);margin-bottom:20px;">Through the Lingora Access Fund, we've provided free Premium access to over 80,000 learners in underserved communities worldwide.</p>
+        <a href="404.html" class="btn btn-primary">Learn About the Fund</a>
+      </div>
+      <div data-aos="right">
+        <div class="stats-strip">
+          <div class="grid grid-2">
+            <div class="stat"><b data-count="80000" data-suffix="+">0</b><span>Scholarships Granted</span></div>
+            <div class="stat"><b data-count="45" data-suffix="+">0</b><span>Countries Reached</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section>
+    <div class="container">
+      <div class="cta-band" data-aos="zoom">
+        <h2>Come learn a language with us</h2>
+        <p>Join millions of learners already building real fluency with Lingora.</p>
+        <div class="hero-cta"><a href="404.html" class="btn btn-amber">Create Free Account</a><a href="404.html" class="btn btn-ghost-light">Browse Courses</a></div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo">
+        <img src="assets/images/stackly-logo.webp" alt="Lingora logo">
+      </a>
+          <p>Stackly helps millions of learners master new languages through bite-sized, science-backed lessons and real conversation practice.</p>
+          <div class="footer-social">
+            <a href="404.html" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="404.html" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="404.html" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="404.html" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          </div>
+        </div>
+        <div>
+          <h4>Company</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+            
+          </ul>
+        </div>
+        <div>
+          <h4>Courses</h4>
+          <ul>
+            <li><a href="404.html">Spanish</a></li>
+            <li><a href="404.html">French</a></li>
+            <li><a href="404.html">Japanese</a></li>
+            <li><a href="404.html">German</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Support</h4>
+          <ul>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="404.html">Help Center</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="signup.html">Sign Up</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <ul class="footer-contact">
+            <li><i class="fa-solid fa-location-dot"></i> MMR Complex, Chinna Thirupathi, near Chinna Muniyappan Kovil, Salem, Tamil Nadu 636008</li>
+            <li><i class="fa-solid fa-phone"></i> +91 98765 43210</li>
+            <li><i class="fa-solid fa-envelope"></i> info@stackly.com</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Stackly. All rights reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="404.html">Privacy Policy</a>
+          <a href="404.html">Terms of Service</a>
+          <a href="404.html">Sitemap</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
