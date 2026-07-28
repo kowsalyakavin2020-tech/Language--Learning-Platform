@@ -925,9 +925,9 @@ html, body{
   .stat-card b{font-size:19px;}
 
   /* any 3-col grid that has an image + spanning panel (Top Performers, Streak, Certificates, Role Distribution) */
-  .grid-3{grid-template-columns:1fr !important;}
-  .grid-3 > *{grid-column:auto !important;}
-  .grid-3 img{width:100%;height:auto !important;max-height:200px;object-fit:cover;}
+  .dash-content .grid-3{grid-template-columns:1fr !important;}
+  .dash-content .grid-3 > *{grid-column:auto !important;}
+  .dash-content .grid-3 img{width:100%;height:auto !important;max-height:200px;object-fit:cover;}
 
   .dash-panel{padding:18px;}
   .dash-subhead{font-size:15px;margin:26px 0 12px;}
