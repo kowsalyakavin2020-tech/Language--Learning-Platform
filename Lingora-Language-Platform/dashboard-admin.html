@@ -187,12 +187,16 @@
   <script>
     document.querySelector('.dash-user-avatar').textContent = (sessionStorage.getItem('lingora_email')||'A')[0].toUpperCase();
     document.querySelectorAll('form[data-dash-form]').forEach(f=>{
-      f.addEventListener('submit', function(e){
-        e.preventDefault();
-        if(validateForm(this)){ showToast('Saved successfully.', 'success'); }
-        else { showToast('Please fix the errors below.', 'error'); }
-      });
-    });
+  f.addEventListener('submit', function(e){
+    e.preventDefault();
+    if(validateForm(this)){
+     
+      setTimeout(()=> window.location.href = '404.html', 1200);
+    } else {
+      showToast('Please fix the errors below.', 'error');
+    }
+  });
+});
   </script>
 </body>
 </html>
