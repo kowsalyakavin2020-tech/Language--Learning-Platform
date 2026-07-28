@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Log In — Lingora</title>
+  <meta name="description" content="Log in to your Lingora account to continue learning.">
+  <meta name="keywords" content="lingora login, sign in language app">
+  <link rel="icon" href="assets/images/stackly-logo.webp">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+</head>
+<body>
+  <div class="loader">
+    <img src="assets/images/stackly-logo.webp" alt="Lingora">
+    <div class="loader-ring"></div>
+    <p>Loading, please wait...</p>
+  </div>
+
+  <div class="auth-page">
+    <div class="auth-wrap" data-aos="zoom">
+      <div class="auth-side">
+        <img src="assets/images/community-learners.webp" alt="Lingora learners community" class="auth-side-img" style="object-position:center 20%;">
+        <div class="auth-blip" style="top:18%;left:78%;animation-delay:0s;"></div>
+        <div class="auth-blip" style="top:62%;left:12%;animation-delay:1s;"></div>
+        <div class="auth-blip" style="top:80%;left:70%;animation-delay:2s;"></div>
+        <div class="content">
+          <a href="index.html" class="auth-logo-pulse" style="display:inline-block;">
+            <img src="assets/images/stackly-logo.webp" alt="Lingora" style="height:30px;filter:brightness(0) invert(1);">
+          </a>
+          <h2>Welcome back to your language journey</h2>
+          <p>Log in to continue your streak, track progress, and pick up right where you left off.</p>
+        </div>
+        <div class="content" style="position:relative;z-index:2;">
+          <div class="hero-stats" style="gap:24px;">
+            <div class="stat"><b style="color:#FFB648;">4.2M+</b><span style="color:#E3E0FF;">Learners</span></div>
+            <div class="stat"><b style="color:#FFB648;">38+</b><span style="color:#E3E0FF;">Languages</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="auth-form-box">
+        <div class="auth-card">
+          <a href="index.html" class="back-home"><i class="fa-solid fa-arrow-left"></i> Back to Home</a>
+          <h1>Log In</h1>
+          <p>Enter your details to access your dashboard.</p>
+
+          <div class="social-row">
+            <a href="404.html"><button type="button" class="social-btn"><i class="fa-brands fa-google"></i> Google</button></a>
+            <a href="404.html"><button type="button" class="social-btn"><i class="fa-brands fa-apple"></i> Apple</button></a>
+          </div>
+          <div class="auth-divider">or continue with email</div>
+
+          <form id="loginForm" novalidate>
+            <label style="font-size:13.5px;font-weight:600;display:block;margin-bottom:10px;">Login As</label>
+            <div class="role-select">
+              <div class="role-opt active" data-role="learner"><i class="fa-solid fa-graduation-cap"></i>Learner</div>
+              <div class="role-opt" data-role="instructor"><i class="fa-solid fa-chalkboard-user"></i>Instructor</div>
+              <div class="role-opt" data-role="admin"><i class="fa-solid fa-user-shield"></i>Admin</div>
+            </div>
+            <input type="hidden" name="role" id="loginRole" value="learner">
+
+            <div class="form-group">
+              <label for="loginEmail">Email Address</label>
+              <input type="email" id="loginEmail" data-validate="required email" placeholder="you@example.com">
+              <div class="error-msg">Enter a valid email address</div>
+            </div>
+            <div class="form-group">
+              <label for="loginPassword">Password</label>
+              <input type="password" id="loginPassword" data-validate="required" placeholder="Enter your password">
+              <i class="fa-regular fa-eye pass-toggle"></i>
+              <div class="error-msg">Password is required</div>
+            </div>
+
+            <div class="auth-row-between">
+              <label style="display:flex;align-items:center;gap:6px;color:var(--ink-soft);"><input type="checkbox" style="accent-color:var(--primary);"> Remember me</label>
+              <a href="404.html">Forgot Password?</a>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-block">Log In</button>
+          </form>
+          <p class="auth-foot">Don't have an account? <a href="signup.html">Sign Up</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="assets/js/main.js"></script>
+  <script>
+    document.getElementById('loginForm').addEventListener('submit', function(e){
+      e.preventDefault();
+      if(validateForm(this)){
+        const email = document.getElementById('loginEmail').value;
+        const role = document.getElementById('loginRole').value;
+        sessionStorage.setItem('lingora_email', email);
+        sessionStorage.setItem('lingora_role', role);
+        const dashboardMap = {learner:'dashboard-learner.html', instructor:'dashboard-instructor.html', admin:'dashboard-admin.html'};
+        showToast('Login successful! Redirecting to your dashboard...', 'success');
+        setTimeout(()=> window.location.href = dashboardMap[role] || 'dashboard-learner.html', 1200);
+      } else {
+        showToast('Please fix the errors below.', 'error');
+      }
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stackly — Learn Languages the Fun Way</title>
+  <meta name="description" content="Lingora is a global language learning platform offering 38+ languages through gamified, science-backed lessons and real conversation practice.">
+  <meta name="keywords" content="language learning, learn spanish, learn french, learn japanese, online language courses, lingora">
+  <link rel="icon" href="assets/images/stackly-logo.webp">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+</head>
+<body>
+  <div class="loader">
+    <img src="assets/images/stackly-logo.webp" alt="Lingora">
+    <div class="loader-ring"></div>
+    <p>Loading, please wait...</p>
+  </div>
+  <header class="navbar">
+    <div class="container nav-inner">
+      <a href="index.html" class="nav-logo">
+        <img src="assets/images/stackly-logo.webp" alt="Lingora logo">
+      </a>
+      <nav>
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link active">Home</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li class="has-dropdown">
+            <a href="courses.html" class="nav-link">Courses <i class="fa-solid fa-chevron-down chev"></i></a>
+            <div class="dropdown">
+              <a href="courses.html">All Courses</a>
+              <a href="courses.html#spanish">Spanish</a>
+              <a href="courses.html#french">French</a>
+              <a href="courses.html#japanese">Japanese</a>
+            </div>
+          </li>
+          <li><a href="pricing.html" class="nav-link">Pricing</a></li>
+          <li><a href="blog.html" class="nav-link">Blog</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="nav-actions">
+        <a href="login.html" class="btn btn-outline">Log In</a>
+        <a href="signup.html" class="btn btn-primary">Get Started</a>
+      </div>
+      <button class="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+  <div class="mobile-menu">
+    <a href="index.html" class="mobile-menu-logo">
+      <img src="assets/images/stackly-logo.webp" alt="Lingora logo">
+    </a>
+    <button class="mobile-menu-close" aria-label="Close menu"><i class="fa-solid fa-xmark"></i></button>
+    <ul>
+      <li><a href="index.html" class="nav-link active">Home</a></li>
+      <li><a href="about.html" class="nav-link">About</a></li>
+      <li class="has-dropdown">
+        <a href="#" class="nav-link">Courses <i class="fa-solid fa-chevron-down chev"></i></a>
+        <div class="sub">
+          <a href="courses.html">All Courses</a>
+          <a href="courses.html#spanish">Spanish</a>
+          <a href="courses.html#french">French</a>
+          <a href="courses.html#japanese">Japanese</a>
+        </div>
+      </li>
+      <li><a href="pricing.html" class="nav-link">Pricing</a></li>
+      <li><a href="blog.html" class="nav-link">Blog</a></li>
+      <li><a href="contact.html" class="nav-link">Contact</a></li>
+    </ul>
+    <div class="mobile-menu-actions">
+      <a href="login.html" class="btn btn-outline btn-block">Log In</a>
+      <a href="signup.html" class="btn btn-primary btn-block">Get Started</a>
+    </div>
+  </div>
+
+
+  <!-- 1. HERO -->
+  <section class="hero">
+    <div class="hero-blob" style="width:320px;height:320px;background:#4A3AFF22;top:-80px;left:-100px;"></div>
+    <div class="hero-blob" style="width:220px;height:220px;background:#FFB64833;bottom:-40px;right:-60px;animation-delay:1.5s;"></div>
+    <div class="container hero-grid">
+      <div data-aos="up">
+        <div class="hero-badge"><i class="fa-solid fa-star"></i> Trusted by 4M+ learners worldwide</div>
+        <h1>Learn a new language, <span class="accent">the fun way</span> — one lesson at a time</h1>
+        <p class="lead">Lingora turns language learning into bite-sized, game-like lessons backed by linguistics research. Build a daily habit, hold real conversations, and track every step of your progress.</p>
+        <div class="hero-cta">
+          <a href="404.html" class="btn btn-primary">Start Learning Free</a>
+          <a href="404.html" class="btn btn-outline">Explore Courses</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat"><b data-count="4.2" data-suffix="M+">0</b><span>Active Learners</span></div>
+          <div class="stat"><b data-count="38" data-suffix="+">0</b><span>Languages Offered</span></div>
+          <div class="stat"><b data-count="97" data-suffix="%">0</b><span>Would Recommend</span></div>
+        </div>
+      </div>
+      <div class="hero-visual" data-aos="zoom" data-aos-delay="150">
+        <div class="orbit-ring"><i></i></div>
+        <div class="orbit-ring reverse"><i></i></div>
+        <img src="assets/images/hero-banner-main.webp" alt="Learner studying a new language on Lingora" class="rounded-img" style="max-width:460px;margin:0 auto;">
+        <div class="hero-card-float" style="top:6%;left:-4%;"><i style="background:#4A3AFF"><i class="fa-solid fa-fire"></i></i> 12-day streak</div>
+        <div class="hero-card-float" style="bottom:8%;right:-6%;animation-delay:1.2s;"><i style="background:#FFB648"><i class="fa-solid fa-trophy" style="color:#12102B"></i></i> +250 XP earned</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2. TRUSTED LOGOS -->
+  <section style="padding:50px 0;border-bottom:1px solid var(--border);">
+    <div class="container" data-aos="up">
+      <p style="text-align:center;color:var(--ink-soft);font-size:13.5px;letter-spacing:1px;text-transform:uppercase;margin-bottom:26px;">Featured in &amp; trusted by learners from</p>
+      <div class="logo-marquee">
+        <div class="logo-track">
+          <span>EduWorld</span><span>Global Learners</span><span>CampusHub</span><span>SkillNet</span><span>BrightPath</span><span>LangForum</span>
+          <span>EduWorld</span><span>Global Learners</span><span>CampusHub</span><span>SkillNet</span><span>BrightPath</span><span>LangForum</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. STATS STRIP -->
+  <section>
+    <div class="container">
+      <div class="stats-strip" data-aos="up">
+        <div class="grid grid-4">
+          <div class="stat"><b data-count="4200000" data-suffix="+">0</b><span>Learners Worldwide</span></div>
+          <div class="stat"><b data-count="38" data-suffix="+">0</b><span>Languages Taught</span></div>
+          <div class="stat"><b data-count="1200" data-suffix="+">0</b><span>Interactive Lessons</span></div>
+          <div class="stat"><b data-count="97" data-suffix="%">0</b><span>Learner Satisfaction</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. WHY CHOOSE US -->
+  <section class="bg-alt" style="background:var(--bg-alt);">
+    <div class="container">
+      <div class="section-head center" data-aos="up">
+        <div class="section-tag" style="justify-content:center;display:flex;">Why Lingora</div>
+        <h2>Everything you need to actually learn a language</h2>
+        <p>Designed with linguists and gameplay designers so lessons stick — not just for a quiz, but for life.</p>
+      </div>
+      <div class="card-marquee-wrap">
+        <div class="card-marquee-track">
+          <div class="card"><div class="icon-box"><i class="fa-solid fa-brain"></i></div><h3>Science-Backed Method</h3><p>Spaced repetition and adaptive review keep vocabulary in long-term memory.</p></div>
+          <div class="card"><div class="icon-box amber"><i class="fa-solid fa-gamepad"></i></div><h3>Gamified Progress</h3><p>Earn XP, keep streaks alive, and climb leaderboards with friends.</p></div>
+          <div class="card"><div class="icon-box"><i class="fa-solid fa-microphone"></i></div><h3>Real Speaking Practice</h3><p>AI conversation partners help you speak confidently from lesson one.</p></div>
+          <div class="card"><div class="icon-box amber"><i class="fa-solid fa-chalkboard-user"></i></div><h3>Certified Tutors</h3><p>Live sessions with native-speaking tutors whenever you need a boost.</p></div>
+          <div class="card"><div class="icon-box"><i class="fa-solid fa-brain"></i></div><h3>Science-Backed Method</h3><p>Spaced repetition and adaptive review keep vocabulary in long-term memory.</p></div>
+          <div class="card"><div class="icon-box amber"><i class="fa-solid fa-gamepad"></i></div><h3>Gamified Progress</h3><p>Earn XP, keep streaks alive, and climb leaderboards with friends.</p></div>
+          <div class="card"><div class="icon-box"><i class="fa-solid fa-microphone"></i></div><h3>Real Speaking Practice</h3><p>AI conversation partners help you speak confidently from lesson one.</p></div>
+          <div class="card"><div class="icon-box amber"><i class="fa-solid fa-chalkboard-user"></i></div><h3>Certified Tutors</h3><p>Live sessions with native-speaking tutors whenever you need a boost.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. HOW IT WORKS -->
+  <section>
+    <div class="container">
+      <div class="section-head center" data-aos="up">
+        <div class="section-tag" style="justify-content:center;display:flex;">Getting Started</div>
+        <h2>Your path to fluency in 4 simple steps</h2>
+      </div>
+      <div class="process-row">
+        <div class="process-step" data-aos="up"><div class="num">01</div><h4>Pick a Language</h4><p>Choose from 38+ languages based on your goals.</p></div>
+        <div class="process-step" data-aos="up" data-aos-delay="100"><div class="num">02</div><h4>Take a Quick Test</h4><p>We tailor your learning path to your current level.</p></div>
+        <div class="process-step" data-aos="up" data-aos-delay="200"><div class="num">03</div><h4>Learn Daily</h4><p>Bite-sized lessons that fit into any schedule.</p></div>
+        <div class="process-step" data-aos="up" data-aos-delay="300"><div class="num">04</div><h4>Speak Confidently</h4><p>Practice real conversations and track fluency growth.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. POPULAR COURSES TABS -->
+  <section style="background:var(--bg-alt);">
+    <div class="container">
+      <div class="section-head" data-aos="up">
+        <div class="section-tag">Popular Courses</div>
+        <h2>Start with the world's most spoken languages</h2>
+      </div>
+      <div class="tabs-head" data-tab-group="lang">
+        <button class="tab-btn active" data-tab="spanish">Spanish</button>
+        <button class="tab-btn" data-tab="french">French</button>
+        <button class="tab-btn" data-tab="japanese">Japanese</button>
+        <button class="tab-btn" data-tab="german">German</button>
+      </div>
+      <div class="tab-panel active" data-tab-group="lang" data-tab="spanish">
+        <img src="assets/images/course-spanish.webp" alt="Spanish course" class="course-banner-img">
+        <div class="grid grid-3">
+          <div class="card"><div class="icon-box flag-box"><img src="https://flagcdn.com/w80/es.png" alt="Spanish flag" loading="lazy"></div><h3>Spanish for Beginners</h3><p>Master everyday conversation in 12 weeks with native audio.</p></div>
+          <div class="card"><div class="icon-box flag-box amber"><img src="https://flagcdn.com/w80/es.png" alt="Spanish flag" loading="lazy"></div><h3>Conversational Spanish</h3><p>Build fluency through real-life roleplay scenarios.</p></div>
+          <div class="card"><div class="icon-box flag-box"><img src="https://flagcdn.com/w80/es.png" alt="Spanish flag" loading="lazy"></div><h3>Business Spanish</h3><p>Professional vocabulary for meetings and negotiations.</p></div>
+        </div>
+      </div>
+      <div class="tab-panel" data-tab-group="lang" data-tab="french">
+        <img src="assets/images/course-french.webp" alt="French course" class="course-banner-img">
+        <div class="grid grid-3">
+          <div class="card"><div class="icon-box flag-box"><img src="https://flagcdn.com/w80/fr.png" alt="French flag" loading="lazy"></div><h3>French Foundations</h3><p>Grammar and pronunciation essentials for absolute beginners.</p></div>
+          <div class="card"><div class="icon-box flag-box amber"><img src="https://flagcdn.com/w80/fr.png" alt="French flag" loading="lazy"></div><h3>French Culture &amp; Chat</h3><p>Learn through short stories, music, and native dialogue.</p></div>
+          <div class="card"><div class="icon-box flag-box"><img src="https://flagcdn.com/w80/fr.png" alt="French flag" loading="lazy"></div><h3>Advanced French</h3><p>Refine fluency with debate-style speaking exercises.</p></div>
+        </div>
+      </div>
+      <div class="tab-panel" data-tab-group="lang" data-tab="japanese">
+        <img src="assets/images/course-japanese.webp" alt="Japanese course" class="course-banner-img">
+        <div class="grid grid-3">
+          <div class="card"><div class="icon-box flag-box"><img src="https://flagcdn.com/w80/jp.png" alt="Japanese flag" loading="lazy"></div><h3>Japanese Basics</h3><p>Hiragana, katakana, and everyday phrases from day one.</p></div>
+          <div class="card"><div class="icon-box flag-box amber"><img src="https://flagcdn.com/w80/jp.png" alt="Japanese flag" loading="lazy"></div><h3>Kanji Mastery</h3><p>Structured kanji learning with mnemonic-based recall.</p></div>
+          <div class="card"><div class="icon-box flag-box"><img src="https://flagcdn.com/w80/jp.png" alt="Japanese flag" loading="lazy"></div><h3>Business Japanese</h3><p>Formal speech patterns for the workplace.</p></div>
+        </div>
+      </div>
+      <div class="tab-panel" data-tab-group="lang" data-tab="german">
+        <img src="assets/images/course-german.webp" alt="German course" class="course-banner-img">
+        <div class="grid grid-3">
+          <div class="card"><div class="icon-box flag-box"><img src="https://flagcdn.com/w80/de.png" alt="German flag" loading="lazy"></div><h3>German Essentials</h3><p>Core grammar and vocabulary for confident beginners.</p></div>
+          <div class="card"><div class="icon-box flag-box amber"><img src="https://flagcdn.com/w80/de.png" alt="German flag" loading="lazy"></div><h3>Everyday German</h3><p>Practical conversations for travel and daily life.</p></div>
+          <div class="card"><div class="icon-box flag-box"><img src="https://flagcdn.com/w80/de.png" alt="German flag" loading="lazy"></div><h3>Fluent German</h3><p>Advanced structures for near-native fluency.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. GAMIFICATION SHOWCASE -->
+  <section>
+    <div class="container hero-grid">
+      <div data-aos="left">
+        <div class="section-tag">Stay Motivated</div>
+        <h2 style="font-size:clamp(26px,4vw,36px);margin-bottom:16px;">Turn practice into a habit you actually enjoy</h2>
+        <p style="color:var(--ink-soft);margin-bottom:24px;">Daily streaks, XP rewards, and friendly leaderboards keep learners coming back — 3x more than traditional courses.</p>
+        <img src="assets/images/feature-gamification.webp" alt="Learner celebrating a streak milestone" class="rounded-img-sm" style="height:220px;margin-bottom:20px;">
+        <div class="grid grid-2" style="gap:16px;">
+          <div class="card" style="padding:20px;"><div class="icon-box amber" style="width:44px;height:44px;font-size:17px;"><i class="fa-solid fa-fire"></i></div><h3 style="font-size:16px;">Daily Streaks</h3></div>
+          <div class="card" style="padding:20px;"><div class="icon-box" style="width:44px;height:44px;font-size:17px;"><i class="fa-solid fa-medal"></i></div><h3 style="font-size:16px;">XP &amp; Badges</h3></div>
+        </div>
+      </div>
+      <div data-aos="right">
+        <div class="dash-panel" style="box-shadow:var(--shadow-lg);">
+          <h3>This Week's Progress</h3>
+          <div class="progress-row"><div class="top"><span>Vocabulary</span><span>82%</span></div><div class="progress-bar"><span data-value="82"></span></div></div>
+          <div class="progress-row"><div class="top"><span>Listening</span><span>68%</span></div><div class="progress-bar"><span data-value="68"></span></div></div>
+          <div class="progress-row"><div class="top"><span>Speaking</span><span>54%</span></div><div class="progress-bar"><span data-value="54"></span></div></div>
+          <div class="progress-row"><div class="top"><span>Grammar</span><span>91%</span></div><div class="progress-bar"><span data-value="91"></span></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 8. LEARNING PATH -->
+  <section style="background:var(--bg-alt);">
+    <div class="container">
+      <div class="section-head center" data-aos="up">
+        <div class="section-tag" style="justify-content:center;display:flex;">Structured Path</div>
+        <h2>A learning path built around your level</h2>
+      </div>
+      <div class="grid grid-4">
+        <div class="card" data-aos="up"><div class="icon-box">A1</div><h3>Beginner</h3><p>Foundations of vocabulary, grammar, and pronunciation.</p></div>
+        <div class="card" data-aos="up" data-aos-delay="100"><div class="icon-box amber">A2</div><h3>Elementary</h3><p>Hold basic conversations about daily life.</p></div>
+        <div class="card" data-aos="up" data-aos-delay="200"><div class="icon-box">B1</div><h3>Intermediate</h3><p>Discuss opinions and handle unplanned situations.</p></div>
+        <div class="card" data-aos="up" data-aos-delay="300"><div class="icon-box amber">B2</div><h3>Advanced</h3><p>Speak fluently and understand native-speed media.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 9. INSTRUCTORS -->
+  <section>
+    <div class="container">
+      <div class="section-head center" data-aos="up">
+        <div class="section-tag" style="justify-content:center;display:flex;">Meet the Team</div>
+        <h2>Learn from native-speaking, certified instructors</h2>
+      </div>
+      <div class="card-marquee-wrap">
+        <div class="card-marquee-track">
+          <div class="card" style="text-align:center;"><img src="assets/images/instructor-1.webp" alt="Maria Kim" class="avatar-photo" style="width:80px;height:80px;margin:0 auto 14px;"><h3 style="font-size:16px;">Maria Kim</h3><p>Spanish &amp; French Coach</p></div>
+          <div class="card" style="text-align:center;"><img src="assets/images/instructor-2.webp" alt="Ravi Tanaka" class="avatar-photo" style="width:80px;height:80px;margin:0 auto 14px;"><h3 style="font-size:16px;">Ravi Tanaka</h3><p>Japanese Specialist</p></div>
+          <div class="card" style="text-align:center;"><img src="assets/images/instructor-3.webp" alt="Anna Lorenz" class="avatar-photo" style="width:80px;height:80px;margin:0 auto 14px;"><h3 style="font-size:16px;">Anna Lorenz</h3><p>German Instructor</p></div>
+          <div class="card" style="text-align:center;"><img src="assets/images/instructor-4.webp" alt="James Dubois" class="avatar-photo" style="width:80px;height:80px;margin:0 auto 14px;"><h3 style="font-size:16px;">James Dubois</h3><p>French Native Tutor</p></div>
+          <div class="card" style="text-align:center;"><img src="assets/images/instructor-1.webp" alt="Maria Kim" class="avatar-photo" style="width:80px;height:80px;margin:0 auto 14px;"><h3 style="font-size:16px;">Maria Kim</h3><p>Spanish &amp; French Coach</p></div>
+          <div class="card" style="text-align:center;"><img src="assets/images/instructor-2.webp" alt="Ravi Tanaka" class="avatar-photo" style="width:80px;height:80px;margin:0 auto 14px;"><h3 style="font-size:16px;">Ravi Tanaka</h3><p>Japanese Specialist</p></div>
+          <div class="card" style="text-align:center;"><img src="assets/images/instructor-3.webp" alt="Anna Lorenz" class="avatar-photo" style="width:80px;height:80px;margin:0 auto 14px;"><h3 style="font-size:16px;">Anna Lorenz</h3><p>German Instructor</p></div>
+          <div class="card" style="text-align:center;"><img src="assets/images/instructor-4.webp" alt="James Dubois" class="avatar-photo" style="width:80px;height:80px;margin:0 auto 14px;"><h3 style="font-size:16px;">James Dubois</h3><p>French Native Tutor</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 10. TESTIMONIALS -->
+  <section style="background:var(--bg-alt);">
+    <div class="container">
+      <div class="section-head center" data-aos="up">
+        <div class="section-tag" style="justify-content:center;display:flex;">Learner Stories</div>
+        <h2>Loved by learners around the world</h2>
+      </div>
+      <div class="testi-carousel">
+  <div class="testi-card active" data-aos="up"><div class="testi-stars">★★★★★</div><p>"I went from zero Spanish to holding real conversations in 4 months. The streak system genuinely kept me consistent."</p><div class="testi-user"><img src="assets/images/testimonial-user-1.webp" alt="Sara Peters" class="testi-avatar-photo"><div><b>Sara Peters</b><span>Learning Spanish</span></div></div></div>
+  <div class="testi-card" data-aos="up"><div class="testi-stars">★★★★★</div><p>"The speaking practice with AI partners is a game changer — I finally lost my fear of speaking out loud."</p><div class="testi-user"><img src="assets/images/testimonial-user-2.webp" alt="David Kim" class="testi-avatar-photo"><div><b>David Kim</b><span>Learning Japanese</span></div></div></div>
+  <div class="testi-card" data-aos="up"><div class="testi-stars">★★★★★</div><p>"Bite-sized lessons fit perfectly into my commute. I've kept a 90-day streak going without even trying hard."</p><div class="testi-user"><img src="assets/images/testimonial-user-3.webp" alt="Nadia Fontaine" class="testi-avatar-photo"><div><b>Nadia Fontaine</b><span>Learning French</span></div></div></div>
+  <div class="testi-dots">
+    <span class="testi-dot active" data-index="0"></span>
+    <span class="testi-dot" data-index="1"></span>
+    <span class="testi-dot" data-index="2"></span>
+  </div>
+</div>
+    </div>
+  </section>
+
+  <!-- 11. PRICING PREVIEW -->
+  <section>
+    <div class="container">
+      <div class="section-head center" data-aos="up">
+        <div class="section-tag" style="justify-content:center;display:flex;">Simple Pricing</div>
+        <h2>Choose the plan that fits your goals</h2>
+      </div>
+      <div class="grid grid-3">
+        <div class="price-card" data-aos="up"><h3>Free</h3><div class="price-amount">$0<span>/month</span></div><ul><li><i class="fa-solid fa-check"></i> 5 lessons per week</li><li><i class="fa-solid fa-check"></i> Basic progress tracking</li><li><i class="fa-solid fa-check"></i> Community access</li></ul><a href="404.html" class="btn btn-outline btn-block">Get Started</a></div>
+        <div class="price-card featured" data-aos="up" data-aos-delay="100"><span class="price-tag">Most Popular</span><h3>Premium</h3><div class="price-amount">$12<span>/month</span></div><ul><li><i class="fa-solid fa-check"></i> Unlimited lessons</li><li><i class="fa-solid fa-check"></i> AI speaking practice</li><li><i class="fa-solid fa-check"></i> Offline downloads</li></ul><a href="404.html" class="btn btn-primary btn-block">Get Started</a></div>
+        <div class="price-card" data-aos="up" data-aos-delay="200"><h3>Pro Coaching</h3><div class="price-amount">$29<span>/month</span></div><ul><li><i class="fa-solid fa-check"></i> Everything in Premium</li><li><i class="fa-solid fa-check"></i> Weekly live tutoring</li><li><i class="fa-solid fa-check"></i> Certified completion</li></ul><a href="404.html" class="btn btn-outline btn-block">Get Started</a></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 12. BLOG PREVIEW -->
+  <section style="background:var(--bg-alt);">
+    <div class="container">
+      <div class="section-head center" data-aos="up">
+        <div class="section-tag" style="justify-content:center;display:flex;">From the Blog</div>
+        <h2>Tips, stories, and language-learning science</h2>
+      </div>
+      <div class="card-marquee-wrap">
+        <div class="card-marquee-track">
+          <div class="card blog-card"><div class="blog-thumb"><img src="assets/images/blog-article-1.webp" alt="Why Spaced Repetition Works" class="img-cover"></div><div class="blog-body"><div class="blog-meta"><span><i class="fa-regular fa-calendar"></i> Jul 12, 2026</span><span><i class="fa-regular fa-clock"></i> 5 min</span></div><h3>Why Spaced Repetition Works</h3><p>The neuroscience behind why bite-sized daily review beats cramming.</p><a href="404.html" class="read-more">Read More</a></div></div>
+          <div class="card blog-card"><div class="blog-thumb"><img src="assets/images/blog-article-2.webp" alt="5 Habits of Fast Language Learners" class="img-cover"></div><div class="blog-body"><div class="blog-meta"><span><i class="fa-regular fa-calendar"></i> Jul 05, 2026</span><span><i class="fa-regular fa-clock"></i> 4 min</span></div><h3>5 Habits of Fast Language Learners</h3><p>Small daily habits that compound into fluency over months.</p><a href="404.html" class="read-more">Read More</a></div></div>
+          <div class="card blog-card"><div class="blog-thumb"><img src="assets/images/feature-speaking.webp" alt="Overcoming the Fear of Speaking" class="img-cover"></div><div class="blog-body"><div class="blog-meta"><span><i class="fa-regular fa-calendar"></i> Jun 28, 2026</span><span><i class="fa-regular fa-clock"></i> 6 min</span></div><h3>Overcoming the Fear of Speaking</h3><p>How AI conversation partners help learners build real confidence.</p><a href="404.html" class="read-more">Read More</a></div></div>
+          <div class="card blog-card"><div class="blog-thumb"><img src="assets/images/blog-article-1.webp" alt="Why Spaced Repetition Works" class="img-cover"></div><div class="blog-body"><div class="blog-meta"><span><i class="fa-regular fa-calendar"></i> Jul 12, 2026</span><span><i class="fa-regular fa-clock"></i> 5 min</span></div><h3>Why Spaced Repetition Works</h3><p>The neuroscience behind why bite-sized daily review beats cramming.</p><a href="404.html" class="read-more">Read More</a></div></div>
+          <div class="card blog-card"><div class="blog-thumb"><img src="assets/images/blog-article-2.webp" alt="5 Habits of Fast Language Learners" class="img-cover"></div><div class="blog-body"><div class="blog-meta"><span><i class="fa-regular fa-calendar"></i> Jul 05, 2026</span><span><i class="fa-regular fa-clock"></i> 4 min</span></div><h3>5 Habits of Fast Language Learners</h3><p>Small daily habits that compound into fluency over months.</p><a href="404.html" class="read-more">Read More</a></div></div>
+          <div class="card blog-card"><div class="blog-thumb"><img src="assets/images/feature-speaking.webp" alt="Overcoming the Fear of Speaking" class="img-cover"></div><div class="blog-body"><div class="blog-meta"><span><i class="fa-regular fa-calendar"></i> Jun 28, 2026</span><span><i class="fa-regular fa-clock"></i> 6 min</span></div><h3>Overcoming the Fear of Speaking</h3><p>How AI conversation partners help learners build real confidence.</p><a href="404.html" class="read-more">Read More</a></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 13. FAQ -->
+  <section>
+    <div class="container" style="max-width:760px;">
+      <div class="section-head center" data-aos="up">
+        <div class="section-tag" style="justify-content:center;display:flex;">FAQ</div>
+        <h2>Frequently asked questions</h2>
+      </div>
+      <div data-aos="up">
+        <div class="acc-item"><div class="acc-head">Is Lingora free to use? <i class="fa-solid fa-plus"></i></div><div class="acc-body"><p>Yes — our Free plan gives you 5 lessons a week with full progress tracking. Upgrade anytime for unlimited access.</p></div></div>
+        <div class="acc-item"><div class="acc-head">How long until I'm conversational? <i class="fa-solid fa-plus"></i></div><div class="acc-body"><p>Most learners hold basic conversations within 8–12 weeks of consistent daily practice.</p></div></div>
+        <div class="acc-item"><div class="acc-head">Can I learn on mobile? <i class="fa-solid fa-plus"></i></div><div class="acc-body"><p>Lingora is fully responsive and works seamlessly across desktop, tablet, and mobile browsers.</p></div></div>
+        <div class="acc-item"><div class="acc-head">Do you offer live tutoring? <i class="fa-solid fa-plus"></i></div><div class="acc-body"><p>Yes, our Pro Coaching plan includes weekly live sessions with certified native-speaking tutors.</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 14. MOBILE APP SHOWCASE -->
+  <section>
+    <div class="container hero-grid">
+      <div data-aos="left">
+        <div class="section-tag">Learn On the Go</div>
+        <h2 style="font-size:clamp(26px,4vw,36px);margin-bottom:16px;">Take Lingora with you, everywhere</h2>
+        <p style="color:var(--ink-soft);margin-bottom:24px;">Download the Lingora app and keep your streak alive on your commute, in line, or on the couch — lessons sync automatically across every device.</p>
+        <div class="hero-cta">
+          <a href="404.html" class="btn btn-primary"><i class="fa-brands fa-apple"></i> App Store</a>
+          <a href="404.html" class="btn btn-outline"><i class="fa-brands fa-google-play"></i> Google Play</a>
+        </div>
+      </div>
+      <div data-aos="right" style="text-align:center;">
+        <img src="assets/images/app-screenshot-mobile.webp" alt="Lingora mobile app" class="rounded-img" style="max-width:280px;margin:0 auto;">
+      </div>
+    </div>
+  </section>
+
+  <!-- 15. WHY LINGORA VS TRADITIONAL -->
+  <section style="background:var(--bg-alt);">
+    <div class="container">
+      <div class="section-head center" data-aos="up">
+        <div class="section-tag" style="justify-content:center;display:flex;">The Difference</div>
+        <h2>Stackly vs. traditional language classes</h2>
+      </div>
+      <div style="overflow-x:auto;" data-aos="up">
+        <table class="dash-table" style="background:#fff;border-radius:var(--radius-md);overflow:hidden;width:100%;">
+          <tr><th>Feature</th><th>Lingora</th><th>Traditional Classes</th></tr>
+          <tr><td>Learn at your own pace</td><td><i class="fa-solid fa-check" style="color:var(--primary);"></i></td><td>—</td></tr>
+          <tr><td>Available 24/7</td><td><i class="fa-solid fa-check" style="color:var(--primary);"></i></td><td>—</td></tr>
+          <tr><td>Gamified motivation</td><td><i class="fa-solid fa-check" style="color:var(--primary);"></i></td><td>—</td></tr>
+          <tr><td>Live speaking practice</td><td><i class="fa-solid fa-check" style="color:var(--primary);"></i></td><td><i class="fa-solid fa-check" style="color:var(--ink-soft);"></i></td></tr>
+          <tr><td>Typical monthly cost</td><td>$0 – $29</td><td>$150+</td></tr>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- 16. AWARDS & RECOGNITION -->
+  <section>
+    <div class="container">
+      <div class="section-head center" data-aos="up">
+        <div class="section-tag" style="justify-content:center;display:flex;">Recognition</div>
+        <h2>Awards &amp; press mentions</h2>
+      </div>
+      <div class="grid grid-4">
+        <div class="card" style="text-align:center;" data-aos="up"><div class="icon-box amber" style="margin:0 auto 14px;"><i class="fa-solid fa-trophy"></i></div><h3 style="font-size:15.5px;">EdTech App of the Year</h3><p>2025</p></div>
+        <div class="card" style="text-align:center;" data-aos="up" data-aos-delay="100"><div class="icon-box" style="margin:0 auto 14px;"><i class="fa-solid fa-star"></i></div><h3 style="font-size:15.5px;">Top Rated Learning App</h3><p>App Store, 2024</p></div>
+        <div class="card" style="text-align:center;" data-aos="up" data-aos-delay="200"><div class="icon-box amber" style="margin:0 auto 14px;"><i class="fa-solid fa-newspaper"></i></div><h3 style="font-size:15.5px;">Featured in EduWorld</h3><p>2025</p></div>
+        <div class="card" style="text-align:center;" data-aos="up" data-aos-delay="300"><div class="icon-box" style="margin:0 auto 14px;"><i class="fa-solid fa-people-group"></i></div><h3 style="font-size:15.5px;">Best Community Impact</h3><p>SkillNet Awards, 2026</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 17. CTA BAND -->
+  <section>
+    <div class="container">
+      <div class="cta-band has-photo" data-aos="zoom" style="--cta-img:url('../images/cta-banner.webp');">
+        <h2>Ready to start speaking a new language?</h2>
+        <p>Join over 4 million learners building real fluency with Lingora — free to start, no credit card required.</p>
+        <div class="hero-cta">
+          <a href="404.html" class="btn btn-amber">Create Free Account</a>
+          <a href="404.html" class="btn btn-ghost-light">Browse Courses</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo">
+        <img src="assets/images/stackly-logo.webp" alt="Lingora logo">
+      </a>
+          <p>Stackly helps millions of learners master new languages through bite-sized, science-backed lessons and real conversation practice.</p>
+          <div class="footer-social">
+            <a href="404.html" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="404.html" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="404.html" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="404.html" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          </div>
+        </div>
+        <div>
+          <h4>Company</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+            
+          </ul>
+        </div>
+        <div>
+          <h4>Courses</h4>
+          <ul>
+            <li><a href="404.html">Spanish</a></li>
+            <li><a href="404.html">French</a></li>
+            <li><a href="404.html">Japanese</a></li>
+            <li><a href="404.html">German</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Support</h4>
+          <ul>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="404.html">Help Center</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="signup.html">Sign Up</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <ul class="footer-contact">
+            <li><i class="fa-solid fa-location-dot"></i> MMR Complex, Chinna Thirupathi, near Chinna Muniyappan Kovil, Salem, Tamil Nadu 636008</li>
+            <li><i class="fa-solid fa-phone"></i> +91 98765 43210</li>
+            <li><i class="fa-solid fa-envelope"></i> info@stackly.com</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Stackly. All rights reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="404.html">Privacy Policy</a>
+          <a href="404.html">Terms of Service</a>
+          <a href="404.html">Sitemap</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

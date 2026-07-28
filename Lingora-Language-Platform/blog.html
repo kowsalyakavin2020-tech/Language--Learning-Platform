@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog — Lingora</title>
+  <meta name="description" content="Explore language learning tips, science, and success stories on the Lingora blog.">
+  <meta name="keywords" content="language learning blog, learn language tips, lingora blog, language science">
+  <link rel="icon" href="assets/images/stackly-logo.webp">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+</head>
+<body>
+  <div class="loader">
+    <img src="assets/images/stackly-logo.webp" alt="Lingora">
+    <div class="loader-ring"></div>
+    <p>Loading, please wait...</p>
+  </div>
+  <header class="navbar">
+    <div class="container nav-inner">
+      <a href="index.html" class="nav-logo">
+        <img src="assets/images/stackly-logo.webp" alt="Lingora logo">
+      </a>
+      <nav>
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li class="has-dropdown">
+            <a href="courses.html" class="nav-link">Courses <i class="fa-solid fa-chevron-down chev"></i></a>
+            <div class="dropdown">
+              <a href="courses.html">All Courses</a>
+              <a href="courses.html#spanish">Spanish</a>
+              <a href="courses.html#french">French</a>
+              <a href="courses.html#japanese">Japanese</a>
+            </div>
+          </li>
+          <li><a href="pricing.html" class="nav-link">Pricing</a></li>
+          <li><a href="blog.html" class="nav-link active">Blog</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="nav-actions">
+        <a href="login.html" class="btn btn-outline">Log In</a>
+        <a href="signup.html" class="btn btn-primary">Get Started</a>
+      </div>
+      <button class="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+  <div class="mobile-menu">
+    <a href="index.html" class="mobile-menu-logo">
+      <img src="assets/images/stackly-logo.webp" alt="Lingora logo">
+    </a>
+    <button class="mobile-menu-close" aria-label="Close menu"><i class="fa-solid fa-xmark"></i></button>
+    <ul>
+      <li><a href="index.html" class="nav-link">Home</a></li>
+      <li><a href="about.html" class="nav-link">About</a></li>
+      <li class="has-dropdown">
+        <a href="#" class="nav-link">Courses <i class="fa-solid fa-chevron-down chev"></i></a>
+        <div class="sub">
+          <a href="courses.html">All Courses</a>
+          <a href="courses.html#spanish">Spanish</a>
+          <a href="courses.html#french">French</a>
+          <a href="courses.html#japanese">Japanese</a>
+        </div>
+      </li>
+      <li><a href="pricing.html" class="nav-link">Pricing</a></li>
+      <li><a href="blog.html" class="nav-link active">Blog</a></li>
+      <li><a href="contact.html" class="nav-link">Contact</a></li>
+    </ul>
+    <div class="mobile-menu-actions">
+      <a href="login.html" class="btn btn-outline btn-block">Log In</a>
+      <a href="signup.html" class="btn btn-primary btn-block">Get Started</a>
+    </div>
+  </div>
+
+
+  <section class="page-hero">
+    <div class="container">
+      <h1>Lingora Blog</h1>
+      <p>Learning science, language tips, and stories from our community.</p>
+      <div class="breadcrumb"><a href="index.html">Home</a><span>/</span><span>Blog</span></div>
+    </div>
+  </section>
+
+  <!-- Category filter -->
+  <section style="padding-bottom:0;">
+    <div class="container" data-aos="up">
+      <div class="tabs-head" data-tab-group="blogcat">
+        <button class="tab-btn active" data-tab="all">All</button>
+        <button class="tab-btn" data-tab="tips">Learning Tips</button>
+        <button class="tab-btn" data-tab="science">Language Science</button>
+        <button class="tab-btn" data-tab="stories">Success Stories</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured post -->
+  <section style="padding-top:30px;">
+    <div class="container">
+      <div class="card" style="display:grid;grid-template-columns:1fr 1fr;gap:0;overflow:hidden;padding:0;" data-aos="up">
+        <img src="assets/images/community-learners.webp" alt="The Science of Why Lingora Works" style="width:100%;height:100%;min-height:260px;object-fit:cover;">
+        <div style="padding:36px;">
+          <span class="blog-cat" style="position:static;display:inline-block;margin-bottom:14px;">Featured</span>
+          <h3 style="font-size:22px;margin-bottom:12px;">The Science of Why Duolingo-Style Apps Actually Work</h3>
+          <p style="color:var(--ink-soft);margin-bottom:18px;">A deep dive into spaced repetition, gamification, and habit formation — and how Lingora applies each one.</p>
+          <a href="404.html" class="read-more">Read Full Article</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Blog grid -->
+  <section>
+    <div class="container">
+      <div class="tab-panel active" data-tab-group="blogcat" data-tab="all">
+        <div class="grid grid-3">
+          <div class="blog-card" data-aos="up">
+      <div class="blog-thumb"><img src="assets/images/feature-listening.webp" alt="Why Spaced Repetition Works" class="img-cover"><span class="blog-cat">Learning Tips</span></div>
+      <div class="blog-body">
+        <div class="blog-meta"><span><i class="fa-regular fa-calendar"></i> Jul 12, 2026</span><span><i class="fa-regular fa-clock"></i> 5 min</span></div>
+        <h3>Why Spaced Repetition Works</h3><p>The neuroscience behind why bite-sized daily review beats cramming.</p>
+        <a href="404.html" class="read-more">Read More</a>
+      </div>
+    </div>
+          <div class="blog-card" data-aos="up" data-aos-delay="100">
+      <div class="blog-thumb"><img src="assets/images/blog-article-2.webp" alt="5 Habits of Fast Language Learners" class="img-cover"><span class="blog-cat">Learning Tips</span></div>
+      <div class="blog-body">
+        <div class="blog-meta"><span><i class="fa-regular fa-calendar"></i> Jul 05, 2026</span><span><i class="fa-regular fa-clock"></i> 4 min</span></div>
+        <h3>5 Habits of Fast Language Learners</h3><p>Small daily habits that compound into fluency over months.</p>
+        <a href="404.html" class="read-more">Read More</a>
+      </div>
+    </div>
+          <div class="blog-card" data-aos="up" data-aos-delay="200">
+      <div class="blog-thumb"><img src="assets/images/feature-speaking.webp" alt="Overcoming the Fear of Speaking" class="img-cover"><span class="blog-cat">Language Science</span></div>
+      <div class="blog-body">
+        <div class="blog-meta"><span><i class="fa-regular fa-calendar"></i> Jun 28, 2026</span><span><i class="fa-regular fa-clock"></i> 6 min</span></div>
+        <h3>Overcoming the Fear of Speaking</h3><p>How AI conversation partners help learners build real confidence.</p>
+        <a href="404.html" class="read-more">Read More</a>
+      </div>
+    </div>
+          <div class="blog-card" data-aos="up">
+      <div class="blog-thumb"><img src="assets/images/blog-article-1.webp" alt="From Zero to Fluent in a Year" class="img-cover"><span class="blog-cat">Success Stories</span></div>
+      <div class="blog-body">
+        <div class="blog-meta"><span><i class="fa-regular fa-calendar"></i> Jun 20, 2026</span><span><i class="fa-regular fa-clock"></i> 3 min</span></div>
+        <h3>From Zero to Fluent in a Year</h3><p>One learner's journey through the Lingora Spanish path.</p>
+        <a href="404.html" class="read-more">Read More</a>
+      </div>
+    </div>
+          <div class="blog-card" data-aos="up" data-aos-delay="100">
+      <div class="blog-thumb"><img src="assets/images/feature-writing.webp" alt="How Bilingual Brains Work Differently" class="img-cover"><span class="blog-cat">Language Science</span></div>
+      <div class="blog-body">
+        <div class="blog-meta"><span><i class="fa-regular fa-calendar"></i> Jun 14, 2026</span><span><i class="fa-regular fa-clock"></i> 7 min</span></div>
+        <h3>How Bilingual Brains Work Differently</h3><p>New research on cognitive benefits of learning a second language.</p>
+        <a href="404.html" class="read-more">Read More</a>
+      </div>
+    </div>
+          <div class="blog-card" data-aos="up" data-aos-delay="200">
+      <div class="blog-thumb"><img src="assets/images/feature-gamification.webp" alt="Best Times of Day to Study a Language" class="img-cover"><span class="blog-cat">Learning Tips</span></div>
+      <div class="blog-body">
+        <div class="blog-meta"><span><i class="fa-regular fa-calendar"></i> Jun 08, 2026</span><span><i class="fa-regular fa-clock"></i> 4 min</span></div>
+        <h3>Best Times of Day to Study a Language</h3><p>What chronotype research says about optimal learning windows.</p>
+        <a href="404.html" class="read-more">Read More</a>
+      </div>
+    </div>
+        </div>
+      </div>
+      <div class="tab-panel" data-tab-group="blogcat" data-tab="tips">
+        <div class="grid grid-3">
+          <div class="blog-card" data-aos="up">
+      <div class="blog-thumb"><img src="assets/images/blog-article-2.webp" alt="5 Habits of Fast Language Learners" class="img-cover"><span class="blog-cat">Learning Tips</span></div>
+      <div class="blog-body">
+        <div class="blog-meta"><span><i class="fa-regular fa-calendar"></i> Jul 05, 2026</span><span><i class="fa-regular fa-clock"></i> 4 min</span></div>
+        <h3>5 Habits of Fast Language Learners</h3><p>Small daily habits that compound into fluency over months.</p>
+        <a href="404.html" class="read-more">Read More</a>
+      </div>
+    </div>
+          <div class="blog-card" data-aos="up" data-aos-delay="100">
+      <div class="blog-thumb"><img src="assets/images/feature-gamification.webp" alt="Best Times of Day to Study a Language" class="img-cover"><span class="blog-cat">Learning Tips</span></div>
+      <div class="blog-body">
+        <div class="blog-meta"><span><i class="fa-regular fa-calendar"></i> Jun 08, 2026</span><span><i class="fa-regular fa-clock"></i> 4 min</span></div>
+        <h3>Best Times of Day to Study a Language</h3><p>What chronotype research says about optimal learning windows.</p>
+        <a href="404.html" class="read-more">Read More</a>
+      </div>
+    </div>
+        </div>
+      </div>
+      <div class="tab-panel" data-tab-group="blogcat" data-tab="science">
+        <div class="grid grid-3">
+          <div class="blog-card" data-aos="up">
+      <div class="blog-thumb"><img src="assets/images/feature-speaking.webp" alt="Overcoming the Fear of Speaking" class="img-cover"><span class="blog-cat">Language Science</span></div>
+      <div class="blog-body">
+        <div class="blog-meta"><span><i class="fa-regular fa-calendar"></i> Jun 28, 2026</span><span><i class="fa-regular fa-clock"></i> 6 min</span></div>
+        <h3>Overcoming the Fear of Speaking</h3><p>How AI conversation partners help learners build real confidence.</p>
+        <a href="404.html" class="read-more">Read More</a>
+      </div>
+    </div>
+          <div class="blog-card" data-aos="up" data-aos-delay="100">
+      <div class="blog-thumb"><img src="assets/images/feature-writing.webp" alt="How Bilingual Brains Work Differently" class="img-cover"><span class="blog-cat">Language Science</span></div>
+      <div class="blog-body">
+        <div class="blog-meta"><span><i class="fa-regular fa-calendar"></i> Jun 14, 2026</span><span><i class="fa-regular fa-clock"></i> 7 min</span></div>
+        <h3>How Bilingual Brains Work Differently</h3><p>New research on cognitive benefits of learning a second language.</p>
+        <a href="404.html" class="read-more">Read More</a>
+      </div>
+    </div>
+        </div>
+      </div>
+      <div class="tab-panel" data-tab-group="blogcat" data-tab="stories">
+        <div class="grid grid-3">
+          <div class="blog-card" data-aos="up">
+      <div class="blog-thumb"><img src="assets/images/blog-article-1.webp" alt="From Zero to Fluent in a Year" class="img-cover"><span class="blog-cat">Success Stories</span></div>
+      <div class="blog-body">
+        <div class="blog-meta"><span><i class="fa-regular fa-calendar"></i> Jun 20, 2026</span><span><i class="fa-regular fa-clock"></i> 3 min</span></div>
+        <h3>From Zero to Fluent in a Year</h3><p>One learner's journey through the Lingora Spanish path.</p>
+        <a href="404.html" class="read-more">Read More</a>
+      </div>
+    </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Popular tags -->
+  <section style="background:var(--bg-alt);">
+    <div class="container" data-aos="up">
+      <div class="section-head center"><div class="section-tag" style="justify-content:center;display:flex;">Explore Topics</div><h2>Popular tags</h2></div>
+      <div style="display:flex;gap:12px;flex-wrap:wrap;justify-content:center;">
+        <a href="404.html" class="btn btn-outline btn-sm">Vocabulary</a>
+        <a href="404.html" class="btn btn-outline btn-sm">Grammar</a>
+        <a href="404.html" class="btn btn-outline btn-sm">Motivation</a>
+        <a href="404.html" class="btn btn-outline btn-sm">Speaking Practice</a>
+        <a href="404.html" class="btn btn-outline btn-sm">Study Techniques</a>
+        <a href="404.html" class="btn btn-outline btn-sm">Culture</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Guest authors -->
+  <section>
+    <div class="container">
+      <div class="section-head center" data-aos="up"><div class="section-tag" style="justify-content:center;display:flex;">Contributors</div><h2>Written by learners &amp; linguists</h2></div>
+      <div class="grid grid-4">
+        <div class="card" style="text-align:center;" data-aos="up"><img src="assets/images/testimonial-user-1.webp" alt="Hana Nakamura" class="avatar-photo" style="width:64px;height:64px;margin:0 auto 12px;"><h3 style="font-size:15px;">Hana Nakamura</h3><p>Head of Curriculum</p></div>
+        <div class="card" style="text-align:center;" data-aos="up" data-aos-delay="100"><img src="assets/images/testimonial-user-2.webp" alt="Omar Traoré" class="avatar-photo" style="width:64px;height:64px;margin:0 auto 12px;"><h3 style="font-size:15px;">Omar Traoré</h3><p>Head of Product</p></div>
+        <div class="card" style="text-align:center;" data-aos="up" data-aos-delay="200"><img src="assets/images/testimonial-user-3.webp" alt="Rosa Castillo" class="avatar-photo" style="width:64px;height:64px;margin:0 auto 12px;"><h3 style="font-size:15px;">Rosa Castillo</h3><p>Community Learner</p></div>
+        <div class="card" style="text-align:center;" data-aos="up" data-aos-delay="300"><img src="assets/images/testimonial-user-4.webp" alt="Leo Martins" class="avatar-photo" style="width:64px;height:64px;margin:0 auto 12px;"><h3 style="font-size:15px;">Leo Martins</h3><p>Co-Founder &amp; CTO</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Video content -->
+  <section style="background:var(--bg-alt);">
+    <div class="container hero-grid">
+      <div data-aos="left">
+        <div class="video-thumb" style="background-image:url('assets/images/app-screenshot-desktop.webp');min-height:220px;">
+          <div class="play-btn"><i class="fa-solid fa-play"></i></div>
+        </div>
+      </div>
+      <div data-aos="right">
+        <div class="section-tag">Watch &amp; Learn</div>
+        <h2 style="font-size:clamp(24px,3.4vw,32px);margin-bottom:14px;">New: Lingora video lessons</h2>
+        <p style="color:var(--ink-soft);margin-bottom:20px;">Short explainer videos on grammar, pronunciation, and culture — now live on our blog and YouTube channel.</p>
+        <a href="404.html" class="btn btn-primary">Watch on YouTube</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Podcast -->
+  <section>
+    <div class="container">
+      <div class="card" style="display:grid;grid-template-columns:1fr 1.3fr;gap:0;overflow:hidden;padding:0;align-items:center;" data-aos="up">
+        <div style="background:linear-gradient(135deg,var(--amber),#FFD08A);min-height:220px;display:flex;align-items:center;justify-content:center;font-size:52px;color:var(--ink);"><i class="fa-solid fa-microphone-lines"></i></div>
+        <div style="padding:40px;">
+          <div class="section-tag">Lingora Podcast</div>
+          <h2 style="font-size:clamp(22px,3vw,28px);margin-bottom:12px;">The Fluency Files</h2>
+          <p style="color:var(--ink-soft);margin-bottom:18px;">Weekly conversations with learners and linguists about what actually works when learning a language.</p>
+          <a href="404.html" class="btn btn-outline">Listen Now</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Community discussion -->
+  <section style="background:var(--bg-alt);">
+    <div class="container">
+      <div class="section-head center" data-aos="up"><div class="section-tag" style="justify-content:center;display:flex;">Join the Conversation</div><h2>Talk with other learners</h2></div>
+      <div class="grid grid-3">
+        <div class="card" data-aos="up"><div class="icon-box"><i class="fa-solid fa-comments"></i></div><h3>Discussion Forum</h3><p>Ask questions and share tips with the Lingora community.</p></div>
+        <div class="card" data-aos="up" data-aos-delay="100"><div class="icon-box amber"><i class="fa-brands fa-discord"></i></div><h3>Discord Server</h3><p>Join live voice practice rooms and study groups.</p></div>
+        <div class="card" data-aos="up" data-aos-delay="200"><div class="icon-box"><i class="fa-solid fa-comment-dots"></i></div><h3>Comment on Posts</h3><p>Share your thoughts directly on any blog article.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter -->
+  <section>
+    <div class="container">
+      <div class="cta-band" data-aos="zoom">
+        <h2>Get language tips in your inbox</h2>
+        <p>Join 200,000+ subscribers getting weekly learning tips and Lingora updates.</p>
+        <form id="newsletterForm" style="display:flex;gap:12px;max-width:420px;margin:0 auto;flex-wrap:wrap;justify-content:center;position:relative;z-index:2;">
+          <input type="email" placeholder="Enter your email" required style="flex:1;min-width:220px;padding:15px 18px;border-radius:50px;border:none;font-size:14.5px;">
+          <button type="submit" class="btn btn-amber">Subscribe</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+
+  <script>
+  document.getElementById('newsletterForm')?.addEventListener('submit', function(e){
+    e.preventDefault();
+    window.location.href = '404.html';
+  });
+</script>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo">
+        <img src="assets/images/stackly-logo.webp" alt="Lingora logo">
+      </a>
+          <p>Stackly helps millions of learners master new languages through bite-sized, science-backed lessons and real conversation practice.</p>
+          <div class="footer-social">
+            <a href="404.html" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="404.html" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="404.html" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="404.html" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          </div>
+        </div>
+        <div>
+          <h4>Company</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+            
+          </ul>
+        </div>
+        <div>
+          <h4>Courses</h4>
+          <ul>
+            <li><a href="404.html">Spanish</a></li>
+            <li><a href="404.html">French</a></li>
+            <li><a href="404.html">Japanese</a></li>
+            <li><a href="404.html">German</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Support</h4>
+          <ul>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="404.html">Help Center</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="signup.html">Sign Up</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <ul class="footer-contact">
+            <li><i class="fa-solid fa-location-dot"></i> MMR Complex, Chinna Thirupathi, near Chinna Muniyappan Kovil, Salem, Tamil Nadu 636008</li>
+            <li><i class="fa-solid fa-phone"></i> +91 98765 43210</li>
+            <li><i class="fa-solid fa-envelope"></i> info@stackly.com</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Stackly. All rights reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="404.html">Privacy Policy</a>
+          <a href="404.html">Terms of Service</a>
+          <a href="404.html">Sitemap</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
